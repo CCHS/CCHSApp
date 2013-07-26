@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CCHSFirstViewController : UIViewController
-
+- (IBAction)segmentController:(id)sender;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentController;
+@property (weak, nonatomic) IBOutlet UIWebView *webDisplay;
 @end

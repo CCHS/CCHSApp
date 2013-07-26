@@ -7,10 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0130F65017968C8100617404 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0130F64F17968C8100617404 /* MessageUI.framework */; };
 		019D2E92176B5BE20037A028 /* CCHS_logoiPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D2E91176B5BE20037A028 /* CCHS_logoiPhone.png */; };
 		019D2E94176B5BE40037A028 /* CCHS_logo iPhone2.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D2E93176B5BE40037A028 /* CCHS_logo iPhone2.png */; };
 		019D2E96176B5BE80037A028 /* CCHS_logoiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D2E95176B5BE80037A028 /* CCHS_logoiPad.png */; };
 		019D2E98176B5BEA0037A028 /* CCHS_logo iPad2.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D2E97176B5BEA0037A028 /* CCHS_logo iPad2.png */; };
+		01B1E62A1785F4B900934794 /* CCHSThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E6291785F4B900934794 /* CCHSThirdViewController.m */; };
+		01B1E62D1785F5F200934794 /* CCHSFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E62C1785F5F200934794 /* CCHSFourthViewController.m */; };
+		01B1E6301786A16F00934794 /* CCHSMoreCentralLinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E62F1786A16F00934794 /* CCHSMoreCentralLinkView.m */; };
+		01B1E6331786A20300934794 /* CCHSMorePowerSchoolLinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E6321786A20300934794 /* CCHSMorePowerSchoolLinkView.m */; };
+		01B1E6361786A30B00934794 /* CCHSMoreMoodleLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E6351786A30B00934794 /* CCHSMoreMoodleLink.m */; };
+		01B1E6391786A38300934794 /* CCHSMoreNavianceLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E6381786A38300934794 /* CCHSMoreNavianceLink.m */; };
+		01B1E63C1787D56100934794 /* CCHSAbtSchoolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E63B1787D56100934794 /* CCHSAbtSchoolView.m */; };
+		01B1E63F1787D58000934794 /* CCHSHandbookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E63E1787D57F00934794 /* CCHSHandbookView.m */; };
+		01B1E6421787D59700934794 /* CCHSAbtAppView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E6411787D59700934794 /* CCHSAbtAppView.m */; };
+		01B1E6441787D8BD00934794 /* CCHS_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B1E6431787D8BD00934794 /* CCHS_logo.png */; };
 		FAF22EDF176B4E7D00B59E55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF22EDE176B4E7D00B59E55 /* UIKit.framework */; };
 		FAF22EE1176B4E7D00B59E55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF22EE0176B4E7D00B59E55 /* Foundation.framework */; };
 		FAF22EE3176B4E7D00B59E55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF22EE2176B4E7D00B59E55 /* CoreGraphics.framework */; };
@@ -31,10 +42,30 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0130F64F17968C8100617404 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		019D2E91176B5BE20037A028 /* CCHS_logoiPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CCHS_logoiPhone.png; path = ../CCHS_logoiPhone.png; sourceTree = "<group>"; };
 		019D2E93176B5BE40037A028 /* CCHS_logo iPhone2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CCHS_logo iPhone2.png"; path = "../CCHS_logo iPhone2.png"; sourceTree = "<group>"; };
 		019D2E95176B5BE80037A028 /* CCHS_logoiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CCHS_logoiPad.png; path = ../CCHS_logoiPad.png; sourceTree = "<group>"; };
 		019D2E97176B5BEA0037A028 /* CCHS_logo iPad2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CCHS_logo iPad2.png"; path = "../CCHS_logo iPad2.png"; sourceTree = "<group>"; };
+		01B1E6281785F4B900934794 /* CCHSThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSThirdViewController.h; sourceTree = "<group>"; };
+		01B1E6291785F4B900934794 /* CCHSThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSThirdViewController.m; sourceTree = "<group>"; };
+		01B1E62B1785F5F200934794 /* CCHSFourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSFourthViewController.h; sourceTree = "<group>"; };
+		01B1E62C1785F5F200934794 /* CCHSFourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSFourthViewController.m; sourceTree = "<group>"; };
+		01B1E62E1786A16F00934794 /* CCHSMoreCentralLinkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSMoreCentralLinkView.h; sourceTree = "<group>"; };
+		01B1E62F1786A16F00934794 /* CCHSMoreCentralLinkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSMoreCentralLinkView.m; sourceTree = "<group>"; };
+		01B1E6311786A20300934794 /* CCHSMorePowerSchoolLinkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSMorePowerSchoolLinkView.h; sourceTree = "<group>"; };
+		01B1E6321786A20300934794 /* CCHSMorePowerSchoolLinkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSMorePowerSchoolLinkView.m; sourceTree = "<group>"; };
+		01B1E6341786A30B00934794 /* CCHSMoreMoodleLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSMoreMoodleLink.h; sourceTree = "<group>"; };
+		01B1E6351786A30B00934794 /* CCHSMoreMoodleLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSMoreMoodleLink.m; sourceTree = "<group>"; };
+		01B1E6371786A38300934794 /* CCHSMoreNavianceLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSMoreNavianceLink.h; sourceTree = "<group>"; };
+		01B1E6381786A38300934794 /* CCHSMoreNavianceLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSMoreNavianceLink.m; sourceTree = "<group>"; };
+		01B1E63A1787D56100934794 /* CCHSAbtSchoolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSAbtSchoolView.h; sourceTree = "<group>"; };
+		01B1E63B1787D56100934794 /* CCHSAbtSchoolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSAbtSchoolView.m; sourceTree = "<group>"; };
+		01B1E63D1787D57F00934794 /* CCHSHandbookView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSHandbookView.h; sourceTree = "<group>"; };
+		01B1E63E1787D57F00934794 /* CCHSHandbookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSHandbookView.m; sourceTree = "<group>"; };
+		01B1E6401787D59700934794 /* CCHSAbtAppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSAbtAppView.h; sourceTree = "<group>"; };
+		01B1E6411787D59700934794 /* CCHSAbtAppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSAbtAppView.m; sourceTree = "<group>"; };
+		01B1E6431787D8BD00934794 /* CCHS_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CCHS_logo.png; path = ../../../../CCHS_logo.png; sourceTree = "<group>"; };
 		FAF22EDB176B4E7D00B59E55 /* RollVikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RollVikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF22EDE176B4E7D00B59E55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAF22EE0176B4E7D00B59E55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -65,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0130F65017968C8100617404 /* MessageUI.framework in Frameworks */,
 				FAF22EDF176B4E7D00B59E55 /* UIKit.framework in Frameworks */,
 				FAF22EE1176B4E7D00B59E55 /* Foundation.framework in Frameworks */,
 				FAF22EE3176B4E7D00B59E55 /* CoreGraphics.framework in Frameworks */,
@@ -94,6 +126,7 @@
 		FAF22EDD176B4E7D00B59E55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0130F64F17968C8100617404 /* MessageUI.framework */,
 				FAF22EDE176B4E7D00B59E55 /* UIKit.framework */,
 				FAF22EE0176B4E7D00B59E55 /* Foundation.framework */,
 				FAF22EE2176B4E7D00B59E55 /* CoreGraphics.framework */,
@@ -110,12 +143,26 @@
 				FAF22EF9176B4E7D00B59E55 /* MainStoryboard_iPad.storyboard */,
 				FAF22EFC176B4E7D00B59E55 /* CCHSFirstViewController.h */,
 				FAF22EFD176B4E7D00B59E55 /* CCHSFirstViewController.m */,
-				FAF22EFF176B4E7D00B59E55 /* first.png */,
-				FAF22F01176B4E7D00B59E55 /* first@2x.png */,
 				FAF22F03176B4E7D00B59E55 /* CCHSSecondViewController.h */,
 				FAF22F04176B4E7D00B59E55 /* CCHSSecondViewController.m */,
-				FAF22F06176B4E7D00B59E55 /* second.png */,
-				FAF22F08176B4E7D00B59E55 /* second@2x.png */,
+				01B1E6281785F4B900934794 /* CCHSThirdViewController.h */,
+				01B1E6291785F4B900934794 /* CCHSThirdViewController.m */,
+				01B1E62B1785F5F200934794 /* CCHSFourthViewController.h */,
+				01B1E62C1785F5F200934794 /* CCHSFourthViewController.m */,
+				01B1E62E1786A16F00934794 /* CCHSMoreCentralLinkView.h */,
+				01B1E62F1786A16F00934794 /* CCHSMoreCentralLinkView.m */,
+				01B1E6311786A20300934794 /* CCHSMorePowerSchoolLinkView.h */,
+				01B1E6321786A20300934794 /* CCHSMorePowerSchoolLinkView.m */,
+				01B1E6341786A30B00934794 /* CCHSMoreMoodleLink.h */,
+				01B1E6351786A30B00934794 /* CCHSMoreMoodleLink.m */,
+				01B1E6371786A38300934794 /* CCHSMoreNavianceLink.h */,
+				01B1E6381786A38300934794 /* CCHSMoreNavianceLink.m */,
+				01B1E63A1787D56100934794 /* CCHSAbtSchoolView.h */,
+				01B1E63B1787D56100934794 /* CCHSAbtSchoolView.m */,
+				01B1E63D1787D57F00934794 /* CCHSHandbookView.h */,
+				01B1E63E1787D57F00934794 /* CCHSHandbookView.m */,
+				01B1E6401787D59700934794 /* CCHSAbtAppView.h */,
+				01B1E6411787D59700934794 /* CCHSAbtAppView.m */,
 				FAF22EE5176B4E7D00B59E55 /* Supporting Files */,
 			);
 			path = RollVikes;
@@ -124,10 +171,15 @@
 		FAF22EE5176B4E7D00B59E55 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				01B1E6431787D8BD00934794 /* CCHS_logo.png */,
 				019D2E97176B5BEA0037A028 /* CCHS_logo iPad2.png */,
 				019D2E95176B5BE80037A028 /* CCHS_logoiPad.png */,
 				019D2E93176B5BE40037A028 /* CCHS_logo iPhone2.png */,
 				019D2E91176B5BE20037A028 /* CCHS_logoiPhone.png */,
+				FAF22EFF176B4E7D00B59E55 /* first.png */,
+				FAF22F01176B4E7D00B59E55 /* first@2x.png */,
+				FAF22F06176B4E7D00B59E55 /* second.png */,
+				FAF22F08176B4E7D00B59E55 /* second@2x.png */,
 				FAF22EE6176B4E7D00B59E55 /* RollVikes-Info.plist */,
 				FAF22EE7176B4E7D00B59E55 /* InfoPlist.strings */,
 				FAF22EEA176B4E7D00B59E55 /* main.m */,
@@ -205,6 +257,7 @@
 				019D2E94176B5BE40037A028 /* CCHS_logo iPhone2.png in Resources */,
 				019D2E96176B5BE80037A028 /* CCHS_logoiPad.png in Resources */,
 				019D2E98176B5BEA0037A028 /* CCHS_logo iPad2.png in Resources */,
+				01B1E6441787D8BD00934794 /* CCHS_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +272,15 @@
 				FAF22EEF176B4E7D00B59E55 /* CCHSAppDelegate.m in Sources */,
 				FAF22EFE176B4E7D00B59E55 /* CCHSFirstViewController.m in Sources */,
 				FAF22F05176B4E7D00B59E55 /* CCHSSecondViewController.m in Sources */,
+				01B1E62A1785F4B900934794 /* CCHSThirdViewController.m in Sources */,
+				01B1E62D1785F5F200934794 /* CCHSFourthViewController.m in Sources */,
+				01B1E6301786A16F00934794 /* CCHSMoreCentralLinkView.m in Sources */,
+				01B1E6331786A20300934794 /* CCHSMorePowerSchoolLinkView.m in Sources */,
+				01B1E6361786A30B00934794 /* CCHSMoreMoodleLink.m in Sources */,
+				01B1E6391786A38300934794 /* CCHSMoreNavianceLink.m in Sources */,
+				01B1E63C1787D56100934794 /* CCHSAbtSchoolView.m in Sources */,
+				01B1E63F1787D58000934794 /* CCHSHandbookView.m in Sources */,
+				01B1E6421787D59700934794 /* CCHSAbtAppView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
