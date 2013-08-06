@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface CCHSThirdViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIWebView *barcodeWeb;
 
 @end

@@ -12,4 +12,5 @@
 - (IBAction)segmentController:(id)sender;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *segmentController;
 @property (weak, nonatomic) IBOutlet UIWebView *webDisplay;
+@property (weak, nonatomic) IBOutlet UIWebView *webDisplay2;
 @end

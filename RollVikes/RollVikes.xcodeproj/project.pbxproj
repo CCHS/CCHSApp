@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0120D98F17A75172008561C4 /* CCHSLoginScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120D98E17A75172008561C4 /* CCHSLoginScreenViewController.m */; };
 		0130F65017968C8100617404 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0130F64F17968C8100617404 /* MessageUI.framework */; };
+		016037CF17AB934300A3E30D /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 016037CE17AB934300A3E30D /* user.png */; };
+		016037D117AB936000A3E30D /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 016037D017AB936000A3E30D /* calendar.png */; };
+		016037D317AB93A500A3E30D /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 016037D217AB93A500A3E30D /* home.png */; };
+		016037D517AB93BB00A3E30D /* user2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 016037D417AB93BB00A3E30D /* user2x.png */; };
+		016037D717AB93CD00A3E30D /* calendar2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 016037D617AB93CD00A3E30D /* calendar2x.png */; };
+		016037D917AB93E600A3E30D /* home2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 016037D817AB93E600A3E30D /* home2x.png */; };
+		016037EB17B06E8300A3E30D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 016037EA17B06E8300A3E30D /* SystemConfiguration.framework */; };
 		019D2E92176B5BE20037A028 /* CCHS_logoiPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D2E91176B5BE20037A028 /* CCHS_logoiPhone.png */; };
 		019D2E94176B5BE40037A028 /* CCHS_logo iPhone2.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D2E93176B5BE40037A028 /* CCHS_logo iPhone2.png */; };
 		019D2E96176B5BE80037A028 /* CCHS_logoiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 019D2E95176B5BE80037A028 /* CCHS_logoiPad.png */; };
@@ -34,15 +42,20 @@
 		FAF22EF8176B4E7D00B59E55 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF22EF6176B4E7D00B59E55 /* MainStoryboard_iPhone.storyboard */; };
 		FAF22EFB176B4E7D00B59E55 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF22EF9176B4E7D00B59E55 /* MainStoryboard_iPad.storyboard */; };
 		FAF22EFE176B4E7D00B59E55 /* CCHSFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF22EFD176B4E7D00B59E55 /* CCHSFirstViewController.m */; };
-		FAF22F00176B4E7D00B59E55 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF22EFF176B4E7D00B59E55 /* first.png */; };
-		FAF22F02176B4E7D00B59E55 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF22F01176B4E7D00B59E55 /* first@2x.png */; };
 		FAF22F05176B4E7D00B59E55 /* CCHSSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAF22F04176B4E7D00B59E55 /* CCHSSecondViewController.m */; };
-		FAF22F07176B4E7D00B59E55 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF22F06176B4E7D00B59E55 /* second.png */; };
-		FAF22F09176B4E7D00B59E55 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FAF22F08176B4E7D00B59E55 /* second@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0120D98D17A75172008561C4 /* CCHSLoginScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSLoginScreenViewController.h; sourceTree = "<group>"; };
+		0120D98E17A75172008561C4 /* CCHSLoginScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSLoginScreenViewController.m; sourceTree = "<group>"; };
 		0130F64F17968C8100617404 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		016037CE17AB934300A3E30D /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		016037D017AB936000A3E30D /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		016037D217AB93A500A3E30D /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		016037D417AB93BB00A3E30D /* user2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user2x.png; sourceTree = "<group>"; };
+		016037D617AB93CD00A3E30D /* calendar2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar2x.png; sourceTree = "<group>"; };
+		016037D817AB93E600A3E30D /* home2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home2x.png; sourceTree = "<group>"; };
+		016037EA17B06E8300A3E30D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		019D2E91176B5BE20037A028 /* CCHS_logoiPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CCHS_logoiPhone.png; path = ../CCHS_logoiPhone.png; sourceTree = "<group>"; };
 		019D2E93176B5BE40037A028 /* CCHS_logo iPhone2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CCHS_logo iPhone2.png"; path = "../CCHS_logo iPhone2.png"; sourceTree = "<group>"; };
 		019D2E95176B5BE80037A028 /* CCHS_logoiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CCHS_logoiPad.png; path = ../CCHS_logoiPad.png; sourceTree = "<group>"; };
@@ -83,12 +96,8 @@
 		FAF22EFA176B4E7D00B59E55 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		FAF22EFC176B4E7D00B59E55 /* CCHSFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCHSFirstViewController.h; sourceTree = "<group>"; };
 		FAF22EFD176B4E7D00B59E55 /* CCHSFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCHSFirstViewController.m; sourceTree = "<group>"; };
-		FAF22EFF176B4E7D00B59E55 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		FAF22F01176B4E7D00B59E55 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		FAF22F03176B4E7D00B59E55 /* CCHSSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCHSSecondViewController.h; sourceTree = "<group>"; };
 		FAF22F04176B4E7D00B59E55 /* CCHSSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCHSSecondViewController.m; sourceTree = "<group>"; };
-		FAF22F06176B4E7D00B59E55 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		FAF22F08176B4E7D00B59E55 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				016037EB17B06E8300A3E30D /* SystemConfiguration.framework in Frameworks */,
 				0130F65017968C8100617404 /* MessageUI.framework in Frameworks */,
 				FAF22EDF176B4E7D00B59E55 /* UIKit.framework in Frameworks */,
 				FAF22EE1176B4E7D00B59E55 /* Foundation.framework in Frameworks */,
@@ -126,6 +136,7 @@
 		FAF22EDD176B4E7D00B59E55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				016037EA17B06E8300A3E30D /* SystemConfiguration.framework */,
 				0130F64F17968C8100617404 /* MessageUI.framework */,
 				FAF22EDE176B4E7D00B59E55 /* UIKit.framework */,
 				FAF22EE0176B4E7D00B59E55 /* Foundation.framework */,
@@ -140,6 +151,8 @@
 				FAF22EED176B4E7D00B59E55 /* CCHSAppDelegate.h */,
 				FAF22EEE176B4E7D00B59E55 /* CCHSAppDelegate.m */,
 				FAF22EF6176B4E7D00B59E55 /* MainStoryboard_iPhone.storyboard */,
+				0120D98D17A75172008561C4 /* CCHSLoginScreenViewController.h */,
+				0120D98E17A75172008561C4 /* CCHSLoginScreenViewController.m */,
 				FAF22EF9176B4E7D00B59E55 /* MainStoryboard_iPad.storyboard */,
 				FAF22EFC176B4E7D00B59E55 /* CCHSFirstViewController.h */,
 				FAF22EFD176B4E7D00B59E55 /* CCHSFirstViewController.m */,
@@ -171,15 +184,17 @@
 		FAF22EE5176B4E7D00B59E55 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				016037D817AB93E600A3E30D /* home2x.png */,
+				016037D617AB93CD00A3E30D /* calendar2x.png */,
+				016037D417AB93BB00A3E30D /* user2x.png */,
+				016037D217AB93A500A3E30D /* home.png */,
+				016037D017AB936000A3E30D /* calendar.png */,
+				016037CE17AB934300A3E30D /* user.png */,
 				01B1E6431787D8BD00934794 /* CCHS_logo.png */,
 				019D2E97176B5BEA0037A028 /* CCHS_logo iPad2.png */,
 				019D2E95176B5BE80037A028 /* CCHS_logoiPad.png */,
 				019D2E93176B5BE40037A028 /* CCHS_logo iPhone2.png */,
 				019D2E91176B5BE20037A028 /* CCHS_logoiPhone.png */,
-				FAF22EFF176B4E7D00B59E55 /* first.png */,
-				FAF22F01176B4E7D00B59E55 /* first@2x.png */,
-				FAF22F06176B4E7D00B59E55 /* second.png */,
-				FAF22F08176B4E7D00B59E55 /* second@2x.png */,
 				FAF22EE6176B4E7D00B59E55 /* RollVikes-Info.plist */,
 				FAF22EE7176B4E7D00B59E55 /* InfoPlist.strings */,
 				FAF22EEA176B4E7D00B59E55 /* main.m */,
@@ -249,15 +264,17 @@
 				FAF22EF5176B4E7D00B59E55 /* Default-568h@2x.png in Resources */,
 				FAF22EF8176B4E7D00B59E55 /* MainStoryboard_iPhone.storyboard in Resources */,
 				FAF22EFB176B4E7D00B59E55 /* MainStoryboard_iPad.storyboard in Resources */,
-				FAF22F00176B4E7D00B59E55 /* first.png in Resources */,
-				FAF22F02176B4E7D00B59E55 /* first@2x.png in Resources */,
-				FAF22F07176B4E7D00B59E55 /* second.png in Resources */,
-				FAF22F09176B4E7D00B59E55 /* second@2x.png in Resources */,
 				019D2E92176B5BE20037A028 /* CCHS_logoiPhone.png in Resources */,
 				019D2E94176B5BE40037A028 /* CCHS_logo iPhone2.png in Resources */,
 				019D2E96176B5BE80037A028 /* CCHS_logoiPad.png in Resources */,
 				019D2E98176B5BEA0037A028 /* CCHS_logo iPad2.png in Resources */,
 				01B1E6441787D8BD00934794 /* CCHS_logo.png in Resources */,
+				016037CF17AB934300A3E30D /* user.png in Resources */,
+				016037D117AB936000A3E30D /* calendar.png in Resources */,
+				016037D317AB93A500A3E30D /* home.png in Resources */,
+				016037D517AB93BB00A3E30D /* user2x.png in Resources */,
+				016037D717AB93CD00A3E30D /* calendar2x.png in Resources */,
+				016037D917AB93E600A3E30D /* home2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +298,7 @@
 				01B1E63C1787D56100934794 /* CCHSAbtSchoolView.m in Sources */,
 				01B1E63F1787D58000934794 /* CCHSHandbookView.m in Sources */,
 				01B1E6421787D59700934794 /* CCHSAbtAppView.m in Sources */,
+				0120D98F17A75172008561C4 /* CCHSLoginScreenViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +396,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RollVikes/RollVikes-Prefix.pch";
 				INFOPLIST_FILE = "RollVikes/RollVikes-Info.plist";
+				INFOPLIST_PREPROCESS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,6 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RollVikes/RollVikes-Prefix.pch";
 				INFOPLIST_FILE = "RollVikes/RollVikes-Info.plist";
+				INFOPLIST_PREPROCESS = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -16,8 +16,10 @@
 
 - (void)viewDidLoad
 {
-    NSURL *url = [NSURL URLWithString:@"http://www.centralcatholichs.com/Bulletin.aspx"];
+    [_webDisplay2 setHidden:YES];
+    NSURL *url = [NSURL URLWithString:@"http://www.centralcatholichs.com/custom/dbs/dailybulletinscrubber.aspx"];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    [_webDisplay setHidden:NO];
     [_webDisplay loadRequest:req];
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -31,12 +33,14 @@
 
 - (IBAction)segmentController:(id)sender {
     if (_segmentController.selectedSegmentIndex==0) {
-        NSURL *url = [NSURL URLWithString:@"http://www.centralcatholichs.com/Bulletin.aspx"];
+        [_webDisplay2 setHidden:YES];
+        NSURL *url = [NSURL URLWithString:@"http://www.centralcatholichs.com/custom/dbs/dailybulletinscrubber.aspx"];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
+        [_webDisplay setHidden:NO];
         [_webDisplay loadRequest:req];
     }
     if (_segmentController.selectedSegmentIndex==1) {
-        
+        [_webDisplay2 setHidden:YES];
         NSDate *now = [NSDate date];
         NSString *strDate = [[NSString alloc] initWithFormat:@"%@",now];
         NSArray *arr = [strDate componentsSeparatedByString:@" "];
@@ -47,9 +51,9 @@
         NSString *month = [dateArr objectAtIndex:1];
         NSString *year = [dateArr objectAtIndex:0];
         NSMutableString *useConvert = [NSMutableString stringWithString:@""];
-        [useConvert appendFormat:month];
-        [useConvert appendFormat:date];
-        [useConvert appendFormat:year];
+        [useConvert appendFormat:@"%@",month];
+        [useConvert appendFormat:@"%@",date];
+        [useConvert appendFormat:@"%@",year];
         NSMutableString *useForURL = [NSMutableString stringWithString:@""];
         for (int x=0,y=1;x<8;x++){
             if ([[useConvert substringWithRange:NSMakeRange(x, y)] isEqualToString:@"0"]){
@@ -87,16 +91,19 @@
         NSMutableString *wholeURL = [NSMutableString stringWithString:urlPartOne];
         [wholeURL appendString:useForURL];
         
-        NSLog(wholeURL);
+        //NSLog(wholeURL);  -for testing purposes-
         
         NSURL *url = [NSURL URLWithString:wholeURL];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
+        [_webDisplay setHidden:NO];
         [_webDisplay loadRequest:req];
     }
     if (_segmentController.selectedSegmentIndex==2) {
-        NSURL *url = [NSURL URLWithString:@"http://www.centralcatholichs.com/custom/twitter/cchstwitter.html"];
+        [_webDisplay setHidden:YES];
+        NSURL *url = [NSURL URLWithString:@"http://www.centralcatholichs.com/custom/app/cchstwitter.html"];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
-        [_webDisplay loadRequest:req];
+        [_webDisplay2 setHidden:NO];
+        [_webDisplay2 loadRequest:req];
     }
 }
 
