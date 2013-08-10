@@ -6,13 +6,11 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface CCHSLoginScreenViewController : UIViewController{
-    NSDictionary *registeredCredentials;
+#import "Reachability.h"
+@interface CCHSLoginScreenViewController : UIViewController<UIWebViewDelegate>{
+    NSMutableDictionary *registeredCredentials;
     IBOutlet UITextField *username;
     IBOutlet UITextField *password;
-    
-
-    
 }
 
 @property struct CGPoint originalCenter;

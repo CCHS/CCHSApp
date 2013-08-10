@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad
 {
-    NSURL *url = [NSURL URLWithString:@"http://centralcatholichs.com/uploadedFiles/New_Site/Content/Academics/2010-2011%20Student%20Parent%20Handbook.pdf"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"handbook13" ofType:@"pdf"];
+    NSURL *url = [NSURL fileURLWithPath:path];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     [_webDisplayHandbook loadRequest:req];
     [super viewDidLoad];

@@ -23,7 +23,7 @@
 {
     [super viewDidLoad];
     [errorMessage setHidden:YES];
-    registeredCredentials = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"1234567890",@"username", nil] forKeys:[NSArray arrayWithObjects:@"npetro14",@"password", nil]];
+    registeredCredentials = [[NSMutableDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"username", nil] forKeys:[NSArray arrayWithObjects:@"password", nil]];
     self.originalCenter = self.view.center;
 }
 
@@ -102,10 +102,60 @@
     
     NSLog(@"%@",loginInfo); //- for testing purposes only
     
-
+    Reachability *reachability = [Reachability reachabilityWithHostName:loginInfo];
+    NetworkStatus status = [reachability currentReachabilityStatus];
     
+    //NSError *error;
+    NSData *data = [NSURLConnection sendSynchronousRequest:req2 returningResponse:NULL error:NULL];
+    NSString *html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    NSScanner *scanner = [NSScanner scannerWithString:html];
+    NSString *token = nil;
+    [scanner scanUpToString:@"<body>" intoString:NULL];
+    [scanner scanUpToString:@"</span>" intoString:&token];
+    
+    //NSString *loginCheck = [loginAuthentication stringByEvaluatingJavaScriptFromString:@"document.all[0]"];
+    //NSLog(@"%@",loginCheck);
+    NSLog(@"%@",token);
+    
+   /* - (void)webViewDidFinishLoad:(UIWebView *)loginAuthentication
+    {
+        int status2 = [[[webView request] valueForHTTPHeaderField:@"Status"] intValue];
+        if (status2 == 404) {
+            status = 0;
+        }
+        else {
+            status = 1;
+        }
+    }*/
     
     if ([[registeredCredentials objectForKey:username.text]isEqualToString:password.text]) {
+        if (status){
+            NSUserDefaults *standardUserUsername = [NSUserDefaults standardUserDefaults];
+            if (standardUserUsername) {
+                [standardUserUsername setObject:[NSString stringWithString:username.text] forKey:@"username"];
+                [standardUserUsername synchronize];
+            }
+            NSUserDefaults *standardUserID = [NSUserDefaults standardUserDefaults];
+            if (standardUserID) {
+                [standardUserID setObject:[NSString stringWithString:password.text] forKey:@"ID"];
+                [standardUserID synchronize];
+            }
+            NSUserDefaults *standardUserEnID = [NSUserDefaults standardUserDefaults];
+            if (standardUserEnID) {
+                [standardUserEnID setObject:[NSString stringWithString:encryptedID] forKey:@"EnID"];
+                [standardUserEnID synchronize];
+            }
+            NSLog(@"hello credentials then status");
+            [self performSegueWithIdentifier:@"loginSegue" sender:sender];
+        }
+        else {
+            NSLog(@"hello credentials only");
+            [self performSegueWithIdentifier:@"loginSegue" sender:sender];
+        }
+    }
+    
+    if (status) {
+        [registeredCredentials setObject:password.text forKey:username.text];
         NSUserDefaults *standardUserUsername = [NSUserDefaults standardUserDefaults];
         if (standardUserUsername) {
             [standardUserUsername setObject:[NSString stringWithString:username.text] forKey:@"username"];
@@ -121,13 +171,14 @@
             [standardUserEnID setObject:[NSString stringWithString:encryptedID] forKey:@"EnID"];
             [standardUserEnID synchronize];
         }
-        
+        NSLog(@"hello status only");
         [self performSegueWithIdentifier:@"loginSegue" sender:sender];
     }
+
     else {
+        NSLog(@"you suck");
         [errorMessage setHidden:NO];
     }
-    
 
 }
 @end

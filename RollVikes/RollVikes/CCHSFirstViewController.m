@@ -17,7 +17,7 @@
 - (void)viewDidLoad
 {
     [_webDisplay2 setHidden:YES];
-    NSURL *url = [NSURL URLWithString:@"http://www.centralcatholichs.com/custom/dbs/dailybulletinscrubber.aspx"];
+    NSURL *url = [NSURL URLWithString:@"http://ccas.centralcatholichs.com/dailybulletinscrubber.aspx"];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
     [_webDisplay setHidden:NO];
     [_webDisplay loadRequest:req];
@@ -34,7 +34,7 @@
 - (IBAction)segmentController:(id)sender {
     if (_segmentController.selectedSegmentIndex==0) {
         [_webDisplay2 setHidden:YES];
-        NSURL *url = [NSURL URLWithString:@"http://www.centralcatholichs.com/custom/dbs/dailybulletinscrubber.aspx"];
+        NSURL *url = [NSURL URLWithString:@"http://ccas.centralcatholichs.com/dailybulletinscrubber.aspx"];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [_webDisplay setHidden:NO];
         [_webDisplay loadRequest:req];
@@ -100,7 +100,7 @@
     }
     if (_segmentController.selectedSegmentIndex==2) {
         [_webDisplay setHidden:YES];
-        NSURL *url = [NSURL URLWithString:@"http://www.centralcatholichs.com/custom/app/cchstwitter.html"];
+        NSURL *url = [NSURL URLWithString:@"http://ccas.centralcatholichs.com/cchstwitter.html"];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         [_webDisplay2 setHidden:NO];
         [_webDisplay2 loadRequest:req];
