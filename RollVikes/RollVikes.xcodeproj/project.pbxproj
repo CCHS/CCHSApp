@@ -37,7 +37,7 @@
 		01B1E63C1787D56100934794 /* CCHSAbtSchoolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E63B1787D56100934794 /* CCHSAbtSchoolView.m */; };
 		01B1E63F1787D58000934794 /* CCHSHandbookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E63E1787D57F00934794 /* CCHSHandbookView.m */; };
 		01B1E6421787D59700934794 /* CCHSAbtAppView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E6411787D59700934794 /* CCHSAbtAppView.m */; };
-		01B1E6441787D8BD00934794 /* CCHS_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B1E6431787D8BD00934794 /* CCHS_logo.png */; };
+		01C6715D17BDBACE0016CEC3 /* CCHS_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C6715C17BDBACE0016CEC3 /* CCHS_logo.png */; };
 		FAF22EDF176B4E7D00B59E55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF22EDE176B4E7D00B59E55 /* UIKit.framework */; };
 		FAF22EE1176B4E7D00B59E55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF22EE0176B4E7D00B59E55 /* Foundation.framework */; };
 		FAF22EE3176B4E7D00B59E55 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF22EE2176B4E7D00B59E55 /* CoreGraphics.framework */; };
@@ -93,7 +93,7 @@
 		01B1E63E1787D57F00934794 /* CCHSHandbookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSHandbookView.m; sourceTree = "<group>"; };
 		01B1E6401787D59700934794 /* CCHSAbtAppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSAbtAppView.h; sourceTree = "<group>"; };
 		01B1E6411787D59700934794 /* CCHSAbtAppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSAbtAppView.m; sourceTree = "<group>"; };
-		01B1E6431787D8BD00934794 /* CCHS_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = CCHS_logo.png; path = ../../../../CCHS_logo.png; sourceTree = "<group>"; };
+		01C6715C17BDBACE0016CEC3 /* CCHS_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCHS_logo.png; sourceTree = "<group>"; };
 		FAF22EDB176B4E7D00B59E55 /* RollVikes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RollVikes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF22EDE176B4E7D00B59E55 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAF22EE0176B4E7D00B59E55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -205,6 +205,7 @@
 				016037F417B0AEF900A3E30D /* Default-Portrait~ipad.png */,
 				016037F217B0AEE900A3E30D /* Default-568h@2x.png */,
 				016037F017B0AEE000A3E30D /* Default@2x.png */,
+				01C6715C17BDBACE0016CEC3 /* CCHS_logo.png */,
 				016037EE17B0AEDB00A3E30D /* Default.png */,
 				016037D817AB93E600A3E30D /* home2x.png */,
 				016037D617AB93CD00A3E30D /* calendar2x.png */,
@@ -212,7 +213,6 @@
 				016037D217AB93A500A3E30D /* home.png */,
 				016037D017AB936000A3E30D /* calendar.png */,
 				016037CE17AB934300A3E30D /* user.png */,
-				01B1E6431787D8BD00934794 /* CCHS_logo.png */,
 				019D2E97176B5BEA0037A028 /* CCHS_logo iPad2.png */,
 				019D2E95176B5BE80037A028 /* CCHS_logoiPad.png */,
 				019D2E93176B5BE40037A028 /* CCHS_logo iPhone2.png */,
@@ -284,7 +284,6 @@
 				019D2E94176B5BE40037A028 /* CCHS_logo iPhone2.png in Resources */,
 				019D2E96176B5BE80037A028 /* CCHS_logoiPad.png in Resources */,
 				019D2E98176B5BEA0037A028 /* CCHS_logo iPad2.png in Resources */,
-				01B1E6441787D8BD00934794 /* CCHS_logo.png in Resources */,
 				016037CF17AB934300A3E30D /* user.png in Resources */,
 				016037D117AB936000A3E30D /* calendar.png in Resources */,
 				016037D317AB93A500A3E30D /* home.png in Resources */,
@@ -297,6 +296,7 @@
 				016037F517B0AEF900A3E30D /* Default-Portrait~ipad.png in Resources */,
 				016037F717B0AEFF00A3E30D /* Default-Portrait@2x~ipad.png in Resources */,
 				0160380117B2D67400A3E30D /* handbook13.pdf in Resources */,
+				01C6715D17BDBACE0016CEC3 /* CCHS_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -59,7 +59,7 @@
     NSString *usernameHold = username.text;
     NSString *passwordHold = password.text;
     NSString *loginInfoPt2 = @"&SID=";
-    NSMutableString *loginInfo = [NSMutableString stringWithString:@"ccas.centralcatholic.private/appsecurity.aspx?un="];
+    NSMutableString *loginInfo = [NSMutableString stringWithString:@"http://ccas.centralcatholic.private/appsecurity.aspx?un="];
     [loginInfo appendString:usernameHold];
     NSMutableString *encryptedID = [NSMutableString stringWithString:@""];
     for (int x=0,y=1;x<8;x++){
@@ -105,31 +105,16 @@
     Reachability *reachability = [Reachability reachabilityWithHostName:loginInfo];
     NetworkStatus status = [reachability currentReachabilityStatus];
     
-    //NSError *error;
-    NSData *data = [NSURLConnection sendSynchronousRequest:req2 returningResponse:NULL error:NULL];
-    NSString *html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSScanner *scanner = [NSScanner scannerWithString:html];
-    NSString *token = nil;
-    [scanner scanUpToString:@"<body>" intoString:NULL];
-    [scanner scanUpToString:@"</span>" intoString:&token];
-    
-    //NSString *loginCheck = [loginAuthentication stringByEvaluatingJavaScriptFromString:@"document.all[0]"];
-    //NSLog(@"%@",loginCheck);
-    NSLog(@"%@",token);
-    
-   /* - (void)webViewDidFinishLoad:(UIWebView *)loginAuthentication
-    {
-        int status2 = [[[webView request] valueForHTTPHeaderField:@"Status"] intValue];
-        if (status2 == 404) {
-            status = 0;
-        }
-        else {
-            status = 1;
-        }
-    }*/
+
+    NSString *html = [loginAuthentication stringByEvaluatingJavaScriptFromString:@"document.body.innerText"];
+    NSDate *future = [NSDate dateWithTimeIntervalSinceNow: 3.0 ];
+    [NSThread sleepUntilDate:future];
+    NSString *string = html;
+    NSLog(@"%@",string);
+    NSString *loginYes = @"LoginCheck=1";
     
     if ([[registeredCredentials objectForKey:username.text]isEqualToString:password.text]) {
-        if (status){
+        if (status&&[string isEqualToString:loginYes]){
             NSUserDefaults *standardUserUsername = [NSUserDefaults standardUserDefaults];
             if (standardUserUsername) {
                 [standardUserUsername setObject:[NSString stringWithString:username.text] forKey:@"username"];
@@ -154,7 +139,9 @@
         }
     }
     
-    if (status) {
+    
+    //&&[string isEqualToString:loginYes]
+    if (status&&[string isEqualToString:loginYes]) {
         [registeredCredentials setObject:password.text forKey:username.text];
         NSUserDefaults *standardUserUsername = [NSUserDefaults standardUserDefaults];
         if (standardUserUsername) {
@@ -179,6 +166,5 @@
         NSLog(@"you suck");
         [errorMessage setHidden:NO];
     }
-
 }
 @end

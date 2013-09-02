@@ -10,5 +10,7 @@
 
 @interface CCHSThirdViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIWebView *barcodeWeb;
+@property (weak, nonatomic) IBOutlet UIWebView *idXMLwebview;
+- (IBAction)button:(id)sender;
 
 @end
