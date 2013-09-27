@@ -13,6 +13,7 @@
 @end
 
 @implementation CCHSFirstViewController
+@synthesize loading;
 
 - (void)viewDidLoad
 {
@@ -95,6 +96,16 @@
         
         NSURL *url = [NSURL URLWithString:wholeURL];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
+        Reachability *reachability = [Reachability reachabilityWithHostName:wholeURL];
+        NetworkStatus status = [reachability currentReachabilityStatus];
+        if (!status) {
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Connection Error"
+                        message:@"You must be connected to the internet via a Central Catholic wifi to access this feature."
+            delegate:nil
+            cancelButtonTitle:@"OK"
+            otherButtonTitles:nil];
+            [alert show];
+        }
         [_webDisplay setHidden:NO];
         [_webDisplay loadRequest:req];
     }

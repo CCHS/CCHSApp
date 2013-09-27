@@ -29,8 +29,18 @@
     
     NSURL *url = [NSURL URLWithString:wholeScheduleUrl];
     NSURLRequest *req = [NSURLRequest requestWithURL:url];
+    Reachability *reachability = [Reachability reachabilityWithHostName:wholeScheduleUrl];
+    NetworkStatus status = [reachability currentReachabilityStatus];
+    if (!status) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Update Error"
+        message:@"This is a chached version of your schedule. You must be connected to the internet via a Central Catholic wifi for your schedule to be updated."
+        delegate:nil
+        cancelButtonTitle:@"OK"
+        otherButtonTitles:nil];
+        [alert show];
+    }
     [scheduleWebView loadRequest:req];
-    NSLog(@"%@",wholeScheduleUrl);
+    //NSLog(@"%@",wholeScheduleUrl);
     
 	// Do any additional setup after loading the view, typically from a nib.
 }

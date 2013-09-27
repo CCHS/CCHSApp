@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Reachability.h"
 
 @interface CCHSThirdViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIWebView *barcodeWeb;
 @property (weak, nonatomic) IBOutlet UIWebView *idXMLwebview;
-- (IBAction)button:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *IDimageView;
+
 
 @end
