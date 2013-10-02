@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0119C1A117E09E3900E6E189 /* BlueandGoldBackground3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0119C1A017E09E3900E6E189 /* BlueandGoldBackground3.png */; };
 		0120D98F17A75172008561C4 /* CCHSLoginScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120D98E17A75172008561C4 /* CCHSLoginScreenViewController.m */; };
+		0122C49317FB996A009F376A /* FBEncryptorAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0122C49017FB996A009F376A /* FBEncryptorAES.m */; };
+		0122C49417FB996A009F376A /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0122C49217FB996A009F376A /* NSData+Base64.m */; };
 		0130F65017968C8100617404 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0130F64F17968C8100617404 /* MessageUI.framework */; };
 		016037CF17AB934300A3E30D /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 016037CE17AB934300A3E30D /* user.png */; };
 		016037D117AB936000A3E30D /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 016037D017AB936000A3E30D /* calendar.png */; };
@@ -25,13 +27,14 @@
 		016037FE17B0B75900A3E30D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 016037FB17B0B75900A3E30D /* Reachability.m */; };
 		016037FF17B0B75900A3E30D /* RNCachingURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 016037FD17B0B75900A3E30D /* RNCachingURLProtocol.m */; };
 		0160380117B2D67400A3E30D /* handbook13.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0160380017B2D67400A3E30D /* handbook13.pdf */; };
+		0187C30117FA02E300235AAF /* NSData+Conversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0187C30017FA02E300235AAF /* NSData+Conversion.m */; };
+		0187C30317FA071900235AAF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0187C30217FA071900235AAF /* Security.framework */; };
 		018800AD17E100C5006F9B49 /* AppLogoV1Iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 018800AC17E100C5006F9B49 /* AppLogoV1Iphone.png */; };
 		018800AF17E100D3006F9B49 /* AppLogoV1IphoneRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 018800AE17E100D3006F9B49 /* AppLogoV1IphoneRetina.png */; };
 		018800B117E100E6006F9B49 /* AppLogoV1Ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 018800B017E100E6006F9B49 /* AppLogoV1Ipad.png */; };
 		018800B317E100F1006F9B49 /* AppLogoV1IpadRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 018800B217E100F1006F9B49 /* AppLogoV1IpadRetina.png */; };
 		018800B517E102EC006F9B49 /* centralcatholiccrest2.png in Resources */ = {isa = PBXBuildFile; fileRef = 018800B417E102EC006F9B49 /* centralcatholiccrest2.png */; };
 		018800B917E11371006F9B49 /* SimpleLogoV2.png in Resources */ = {isa = PBXBuildFile; fileRef = 018800B817E11371006F9B49 /* SimpleLogoV2.png */; };
-		019308EA17E7A35F006275DC /* NSDataEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = 019308E917E7A35F006275DC /* NSDataEncryption.m */; };
 		01A73CB317D6E694005A3250 /* NewsBuilding.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01A73CB217D6E694005A3250 /* NewsBuilding.jpg */; };
 		01A73CB517D6E73F005A3250 /* Auditorium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01A73CB417D6E73F005A3250 /* Auditorium.jpg */; };
 		01A73CB717D6E7CA005A3250 /* #rollvikes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 01A73CB617D6E7CA005A3250 /* #rollvikes.jpeg */; };
@@ -71,6 +74,10 @@
 		0119C1A017E09E3900E6E189 /* BlueandGoldBackground3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueandGoldBackground3.png; sourceTree = "<group>"; };
 		0120D98D17A75172008561C4 /* CCHSLoginScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSLoginScreenViewController.h; sourceTree = "<group>"; };
 		0120D98E17A75172008561C4 /* CCHSLoginScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSLoginScreenViewController.m; sourceTree = "<group>"; };
+		0122C48F17FB996A009F376A /* FBEncryptorAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBEncryptorAES.h; sourceTree = "<group>"; };
+		0122C49017FB996A009F376A /* FBEncryptorAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBEncryptorAES.m; sourceTree = "<group>"; };
+		0122C49117FB996A009F376A /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		0122C49217FB996A009F376A /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		0130F64F17968C8100617404 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		016037CE17AB934300A3E30D /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		016037D017AB936000A3E30D /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
@@ -89,14 +96,15 @@
 		016037FC17B0B75900A3E30D /* RNCachingURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCachingURLProtocol.h; sourceTree = "<group>"; };
 		016037FD17B0B75900A3E30D /* RNCachingURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCachingURLProtocol.m; sourceTree = "<group>"; };
 		0160380017B2D67400A3E30D /* handbook13.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = handbook13.pdf; sourceTree = "<group>"; };
+		0187C2FF17FA02E300235AAF /* NSData+Conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Conversion.h"; sourceTree = "<group>"; };
+		0187C30017FA02E300235AAF /* NSData+Conversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Conversion.m"; sourceTree = "<group>"; };
+		0187C30217FA071900235AAF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		018800AC17E100C5006F9B49 /* AppLogoV1Iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppLogoV1Iphone.png; path = ../AppLogoV1Iphone.png; sourceTree = "<group>"; };
 		018800AE17E100D3006F9B49 /* AppLogoV1IphoneRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppLogoV1IphoneRetina.png; path = ../AppLogoV1IphoneRetina.png; sourceTree = "<group>"; };
 		018800B017E100E6006F9B49 /* AppLogoV1Ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppLogoV1Ipad.png; path = ../AppLogoV1Ipad.png; sourceTree = "<group>"; };
 		018800B217E100F1006F9B49 /* AppLogoV1IpadRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppLogoV1IpadRetina.png; path = ../AppLogoV1IpadRetina.png; sourceTree = "<group>"; };
 		018800B417E102EC006F9B49 /* centralcatholiccrest2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = centralcatholiccrest2.png; path = "../../../CCHS App Logos and Such/centralcatholiccrest2.png"; sourceTree = "<group>"; };
 		018800B817E11371006F9B49 /* SimpleLogoV2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SimpleLogoV2.png; path = "../../../CCHS App Logos and Such/SimpleLogoV2.png"; sourceTree = "<group>"; };
-		019308E817E7A35F006275DC /* NSDataEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSDataEncryption.h; path = ../NSDataEncryption.h; sourceTree = "<group>"; };
-		019308E917E7A35F006275DC /* NSDataEncryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NSDataEncryption.m; path = ../NSDataEncryption.m; sourceTree = "<group>"; };
 		01A73CB217D6E694005A3250 /* NewsBuilding.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NewsBuilding.jpg; sourceTree = "<group>"; };
 		01A73CB417D6E73F005A3250 /* Auditorium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Auditorium.jpg; sourceTree = "<group>"; };
 		01A73CB617D6E7CA005A3250 /* #rollvikes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "#rollvikes.jpeg"; sourceTree = "<group>"; };
@@ -153,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0187C30317FA071900235AAF /* Security.framework in Frameworks */,
 				016037EB17B06E8300A3E30D /* SystemConfiguration.framework in Frameworks */,
 				0130F65017968C8100617404 /* MessageUI.framework in Frameworks */,
 				FAF22EDF176B4E7D00B59E55 /* UIKit.framework in Frameworks */,
@@ -184,6 +193,7 @@
 		FAF22EDD176B4E7D00B59E55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0187C30217FA071900235AAF /* Security.framework */,
 				016037EA17B06E8300A3E30D /* SystemConfiguration.framework */,
 				0130F64F17968C8100617404 /* MessageUI.framework */,
 				FAF22EDE176B4E7D00B59E55 /* UIKit.framework */,
@@ -196,8 +206,12 @@
 		FAF22EE4176B4E7D00B59E55 /* RollVikes */ = {
 			isa = PBXGroup;
 			children = (
-				019308E817E7A35F006275DC /* NSDataEncryption.h */,
-				019308E917E7A35F006275DC /* NSDataEncryption.m */,
+				0122C48F17FB996A009F376A /* FBEncryptorAES.h */,
+				0122C49017FB996A009F376A /* FBEncryptorAES.m */,
+				0122C49117FB996A009F376A /* NSData+Base64.h */,
+				0122C49217FB996A009F376A /* NSData+Base64.m */,
+				0187C2FF17FA02E300235AAF /* NSData+Conversion.h */,
+				0187C30017FA02E300235AAF /* NSData+Conversion.m */,
 				FAF22EED176B4E7D00B59E55 /* CCHSAppDelegate.h */,
 				FAF22EEE176B4E7D00B59E55 /* CCHSAppDelegate.m */,
 				016037FA17B0B75900A3E30D /* Reachability.h */,
@@ -386,12 +400,14 @@
 				01B1E6301786A16F00934794 /* CCHSMoreCentralLinkView.m in Sources */,
 				01B1E6331786A20300934794 /* CCHSMorePowerSchoolLinkView.m in Sources */,
 				01B1E6361786A30B00934794 /* CCHSMoreMoodleLink.m in Sources */,
-				019308EA17E7A35F006275DC /* NSDataEncryption.m in Sources */,
+				0122C49317FB996A009F376A /* FBEncryptorAES.m in Sources */,
 				01B1E6391786A38300934794 /* CCHSMoreNavianceLink.m in Sources */,
 				01B1E63C1787D56100934794 /* CCHSAbtSchoolView.m in Sources */,
 				01B1E63F1787D58000934794 /* CCHSHandbookView.m in Sources */,
 				01B1E6421787D59700934794 /* CCHSAbtAppView.m in Sources */,
 				0120D98F17A75172008561C4 /* CCHSLoginScreenViewController.m in Sources */,
+				0187C30117FA02E300235AAF /* NSData+Conversion.m in Sources */,
+				0122C49417FB996A009F376A /* NSData+Base64.m in Sources */,
 				016037FE17B0B75900A3E30D /* Reachability.m in Sources */,
 				016037FF17B0B75900A3E30D /* RNCachingURLProtocol.m in Sources */,
 				01F2349B17DA0B4D0012660E /* PasswordHelpViewController.m in Sources */,

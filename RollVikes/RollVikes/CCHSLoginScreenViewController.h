@@ -7,13 +7,13 @@
 
 #import <UIKit/UIKit.h>
 #import "Reachability.h"
-#import "NSDataEncryption.h"
+#import "NSData+Conversion.h"
+#import "FBEncryptorAES.h"
 
 @interface CCHSLoginScreenViewController : UIViewController<UIWebViewDelegate>{
     NSMutableDictionary *registeredCredentials;
     IBOutlet UITextField *username;
     IBOutlet UITextField *password;
-    IBOutlet UITextField *IDnumber;
 }
 
 @property struct CGPoint originalCenter;

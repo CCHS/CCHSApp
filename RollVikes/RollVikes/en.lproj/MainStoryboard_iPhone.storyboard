@@ -133,7 +133,7 @@
                                 <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iB9-OQ-XFP">
-                                <rect key="frame" x="60" y="113" width="200" height="314"/>
+                                <rect key="frame" x="60" y="93" width="200" height="334"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -146,22 +146,22 @@
                                 </constraints>
                             </webView>
                             <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G0g-dt-PhI">
-                                <rect key="frame" x="135" y="76" width="180" height="293"/>
+                                <rect key="frame" x="135" y="76" width="180" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="293" id="Qfk-qg-L2B"/>
+                                    <constraint firstAttribute="height" constant="300" id="Qfk-qg-L2B"/>
                                     <constraint firstAttribute="width" constant="180" id="ubv-FA-drf"/>
                                 </constraints>
                             </webView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="imageNA.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YMM-qu-lvZ">
-                                <rect key="frame" x="6" y="93" width="130" height="175"/>
+                                <rect key="frame" x="6" y="93" width="130" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="PtB-g9-EEk"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghR-3g-1De">
-                                <rect key="frame" x="6" y="93" width="130" height="175"/>
+                                <rect key="frame" x="6" y="93" width="130" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="175" id="9CK-BB-cU7"/>
+                                    <constraint firstAttribute="height" constant="180" id="9CK-BB-cU7"/>
                                 </constraints>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8px-Zk-ZsV">
@@ -176,13 +176,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1cl-es-HNa" firstAttribute="top" secondItem="G0g-dt-PhI" secondAttribute="bottom" constant="8" id="31H-ba-bY6"/>
+                            <constraint firstItem="1cl-es-HNa" firstAttribute="top" secondItem="G0g-dt-PhI" secondAttribute="bottom" constant="1" id="31H-ba-bY6"/>
                             <constraint firstItem="YMM-qu-lvZ" firstAttribute="trailing" secondItem="ghR-3g-1De" secondAttribute="trailing" id="4pI-nq-00H"/>
                             <constraint firstItem="8px-Zk-ZsV" firstAttribute="leading" secondItem="hxd-z2-Lj4" secondAttribute="leading" id="87M-gc-9mA"/>
                             <constraint firstItem="Dgq-bw-OTX" firstAttribute="top" secondItem="8px-Zk-ZsV" secondAttribute="bottom" constant="-44" id="CwN-hv-YlB"/>
                             <constraint firstItem="G0g-dt-PhI" firstAttribute="top" secondItem="hxd-z2-Lj4" secondAttribute="top" constant="76" id="GHg-hv-Zpf"/>
                             <constraint firstItem="YMM-qu-lvZ" firstAttribute="leading" secondItem="ghR-3g-1De" secondAttribute="leading" id="KzC-vW-ynE"/>
-                            <constraint firstItem="iB9-OQ-XFP" firstAttribute="top" secondItem="YMM-qu-lvZ" secondAttribute="top" constant="20" id="P7G-dB-pv8"/>
+                            <constraint firstItem="iB9-OQ-XFP" firstAttribute="top" secondItem="YMM-qu-lvZ" secondAttribute="top" id="P7G-dB-pv8"/>
                             <constraint firstItem="iB9-OQ-XFP" firstAttribute="leading" secondItem="1cl-es-HNa" secondAttribute="leading" id="Pcn-jD-VDW"/>
                             <constraint firstItem="8px-Zk-ZsV" firstAttribute="trailing" secondItem="Dgq-bw-OTX" secondAttribute="trailing" id="RsA-bH-ZMf"/>
                             <constraint firstItem="8px-Zk-ZsV" firstAttribute="centerX" secondItem="iB9-OQ-XFP" secondAttribute="centerX" id="SaL-pR-4qy"/>
@@ -215,7 +215,7 @@
             <objects>
                 <tableViewController title="More" id="jgA-k8-guP" customClass="CCHSFourthViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="vik-FU-GtC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="separatorColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
@@ -223,7 +223,7 @@
                             <tableViewSection headerTitle="IMPORTANT" id="aLy-AE-jUh">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="eGL-iu-38G" style="IBUITableViewCellStyleDefault" id="6ef-Cn-s0o">
-                                        <rect key="frame" x="0.0" y="55" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="119" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6ef-Cn-s0o" id="hqz-y7-Eii">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -246,7 +246,7 @@
                             <tableViewSection headerTitle="Links" id="xoJ-db-oLh">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="cDN-up-gxK" detailTextLabel="G24-PW-dSQ" style="IBUITableViewCellStyleSubtitle" id="MWL-UX-GF9">
-                                        <rect key="frame" x="0.0" y="147" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="211" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MWL-UX-GF9" id="FZf-JX-eNN">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -271,7 +271,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="mt9-6A-PlG" detailTextLabel="zYl-J0-tyM" style="IBUITableViewCellStyleSubtitle" id="KUw-aj-dP4">
-                                        <rect key="frame" x="0.0" y="191" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="255" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KUw-aj-dP4" id="ldb-ya-F3g">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -296,7 +296,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="Yf0-2m-WfN" detailTextLabel="fKw-Rx-kN8" style="IBUITableViewCellStyleSubtitle" id="G02-wF-Ma1">
-                                        <rect key="frame" x="0.0" y="235" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="299" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G02-wF-Ma1" id="rRg-07-0sJ">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -321,7 +321,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="y1I-2D-xeJ" detailTextLabel="S54-gN-Vvb" style="IBUITableViewCellStyleSubtitle" id="UEZ-3F-wj1">
-                                        <rect key="frame" x="0.0" y="279" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="343" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UEZ-3F-wj1" id="uNm-R9-1cK">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -350,7 +350,7 @@
                             <tableViewSection headerTitle="Other" footerTitle="...more to come!" id="7Jb-AJ-NDe">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="LPn-UC-Jfd" style="IBUITableViewCellStyleDefault" id="o26-cg-LmU">
-                                        <rect key="frame" x="0.0" y="371" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="435" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="o26-cg-LmU" id="gPb-Bj-Uts">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -369,7 +369,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="EdK-j7-pnL" style="IBUITableViewCellStyleDefault" id="j4J-Vz-t9C">
-                                        <rect key="frame" x="0.0" y="415" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="479" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j4J-Vz-t9C" id="9Ic-TZ-lda">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -388,7 +388,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="a3E-Pe-8V6" style="IBUITableViewCellStyleDefault" id="Rzg-nr-UHY">
-                                        <rect key="frame" x="0.0" y="459" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="523" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Rzg-nr-UHY" id="Bps-G2-sWX">
                                             <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -407,7 +407,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="19M-HR-BpU" style="IBUITableViewCellStyleDefault" id="001-4F-WHn">
-                                        <rect key="frame" x="0.0" y="503" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="567" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="001-4F-WHn" id="mRD-jK-Q6a">
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="43"/>
@@ -448,11 +448,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Off-VP-whY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="aMZ-N4-auX">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wWp-7A-h0p">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="457"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="521"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
@@ -625,8 +625,8 @@
                     <tabBarItem key="tabBarItem" systemItem="more" id="0Vk-IU-5vr"/>
                     <toolbarItems/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="P0d-dt-5q0">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="P0d-dt-5q0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -648,11 +648,11 @@
                         <viewControllerLayoutGuide type="bottom" id="md1-1b-0Zk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="a8b-pN-kWD">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynq-oF-QAU" userLabel="Brothers">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Since Central Catholic High School opened in 1927, the administration and faculty have been composed of Brothers of the Christian Schools, popularly called “The Christian Brothers” in the United States. This religious congregation of the Roman Catholic Church is a society of celibate laymen who profess the vows of poverty, chastity and obedience and are dedicated solely to the ministry of Christian education.
 
@@ -665,7 +665,7 @@ The Christian Brothers at Central Catholic, members of the congregation’s East
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuW-dP-bzQ" userLabel="Docs">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Central Catholic High School Foundation Documents: 
 
@@ -732,7 +732,7 @@ Able to recognize and understand his responsibilities as part of a global commun
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2W0-IZ-kW6" userLabel="History">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Shortly after the Most Reverend Hugh C. Boyle was elevated to the episcopacy, he began a secondary school expansion program in Pittsburgh.
 
@@ -753,7 +753,7 @@ In 2008, Central Catholic was incorporated with its own two-tiered Board of Dire
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2G-ke-2sv" userLabel="Overview">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Since 1927 Central Catholic High School has been building a proud tradition of excellence as a high school for young men. The school is conducted by the Christian Brothers, diocesan clergy and dedicated laymen and laywomen under the auspices of the Diocese of Pittsburgh. 
 
@@ -825,11 +825,11 @@ Located in the Oakland area, the school is in the center of the educational and 
                         <viewControllerLayoutGuide type="bottom" id="4WS-rC-KNg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="SXA-Xt-b7U">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8JE-XP-e1u">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="456"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
@@ -859,23 +859,23 @@ Located in the Oakland area, the school is in the center of the educational and 
                         <viewControllerLayoutGuide type="bottom" id="V1S-5I-g9b"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="E9k-dV-ZJZ">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmC-Zh-md4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="522"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="CCHS_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="WP1-Oe-RnT">
-                                        <rect key="frame" x="85" y="20" width="150" height="150"/>
+                                        <rect key="frame" x="85" y="21" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="RRj-ie-L00"/>
                                             <constraint firstAttribute="width" constant="150" id="jUX-uo-biI"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9qN-l5-jvV">
-                                        <rect key="frame" x="0.0" y="178" width="320" height="188"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9qN-l5-jvV">
+                                        <rect key="frame" x="0.0" y="178" width="320" height="225"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="188" id="x5X-qx-y9Z"/>
+                                            <constraint firstAttribute="height" constant="225" id="x5X-qx-y9Z"/>
                                         </constraints>
                                         <string key="text">RollVikes
 Version 1.0.0
@@ -885,7 +885,7 @@ This is an app designed and created for the benefit of the students. The RollVik
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w4z-wL-uq3">
-                                        <rect key="frame" x="95" y="412" width="130" height="34"/>
+                                        <rect key="frame" x="95" y="411" width="130" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="130" id="rHb-bF-BQ9"/>
                                             <constraint firstAttribute="height" constant="34" id="sYs-4c-gcp"/>
@@ -901,20 +901,20 @@ This is an app designed and created for the benefit of the students. The RollVik
                                 <constraints>
                                     <constraint firstItem="9qN-l5-jvV" firstAttribute="leading" secondItem="wmC-Zh-md4" secondAttribute="leading" id="HKK-RD-9ZD"/>
                                     <constraint firstItem="9qN-l5-jvV" firstAttribute="centerX" secondItem="w4z-wL-uq3" secondAttribute="centerX" id="IjX-2Y-cUp"/>
-                                    <constraint firstAttribute="bottom" secondItem="w4z-wL-uq3" secondAttribute="bottom" constant="9" id="QOL-nA-BoJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="w4z-wL-uq3" secondAttribute="bottom" constant="77" id="QOL-nA-BoJ"/>
                                     <constraint firstItem="9qN-l5-jvV" firstAttribute="trailing" secondItem="wmC-Zh-md4" secondAttribute="trailing" id="Y5S-4Q-1y9"/>
-                                    <constraint firstItem="WP1-Oe-RnT" firstAttribute="top" secondItem="wmC-Zh-md4" secondAttribute="top" constant="20" symbolic="YES" id="Yy2-Kl-dJR"/>
+                                    <constraint firstItem="WP1-Oe-RnT" firstAttribute="top" secondItem="wmC-Zh-md4" secondAttribute="top" constant="21" id="Yy2-Kl-dJR"/>
                                     <constraint firstItem="WP1-Oe-RnT" firstAttribute="centerX" secondItem="wmC-Zh-md4" secondAttribute="centerX" id="f4k-7N-1ov"/>
                                     <constraint firstItem="WP1-Oe-RnT" firstAttribute="centerX" secondItem="9qN-l5-jvV" secondAttribute="centerX" id="htP-gV-gpA"/>
-                                    <constraint firstItem="9qN-l5-jvV" firstAttribute="top" secondItem="WP1-Oe-RnT" secondAttribute="bottom" constant="8" symbolic="YES" id="kD0-p7-CpX"/>
-                                    <constraint firstItem="w4z-wL-uq3" firstAttribute="top" secondItem="9qN-l5-jvV" secondAttribute="bottom" constant="46" id="lQg-Qr-L6S"/>
+                                    <constraint firstItem="9qN-l5-jvV" firstAttribute="top" secondItem="WP1-Oe-RnT" secondAttribute="bottom" constant="7" id="kD0-p7-CpX"/>
+                                    <constraint firstItem="w4z-wL-uq3" firstAttribute="top" secondItem="9qN-l5-jvV" secondAttribute="bottom" constant="8" id="lQg-Qr-L6S"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wmC-Zh-md4" firstAttribute="trailing" secondItem="E9k-dV-ZJZ" secondAttribute="trailing" id="XBe-Di-Cbq"/>
-                            <constraint firstItem="wmC-Zh-md4" firstAttribute="bottom" secondItem="E9k-dV-ZJZ" secondAttribute="bottom" id="aVa-8A-Srx"/>
+                            <constraint firstItem="wmC-Zh-md4" firstAttribute="bottom" secondItem="E9k-dV-ZJZ" secondAttribute="bottom" constant="-46" id="aVa-8A-Srx"/>
                             <constraint firstItem="wmC-Zh-md4" firstAttribute="top" secondItem="E9k-dV-ZJZ" secondAttribute="top" id="fnd-0P-DWj"/>
                             <constraint firstItem="wmC-Zh-md4" firstAttribute="leading" secondItem="E9k-dV-ZJZ" secondAttribute="leading" id="n0t-g6-iy5"/>
                         </constraints>
@@ -934,11 +934,11 @@ This is an app designed and created for the benefit of the students. The RollVik
                         <viewControllerLayoutGuide type="bottom" id="qSV-iq-rmq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HUS-rF-Dcj">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Vm-n8-ptf">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
@@ -968,11 +968,11 @@ This is an app designed and created for the benefit of the students. The RollVik
                         <viewControllerLayoutGuide type="bottom" id="0h8-Jd-Snx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5Ll-5r-RdC">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2tr-ro-pWZ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
@@ -1002,11 +1002,11 @@ This is an app designed and created for the benefit of the students. The RollVik
                         <viewControllerLayoutGuide type="bottom" id="tpY-14-0Ew"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z85-SP-9is">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zdY-rJ-bR2">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="455"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
@@ -1036,11 +1036,11 @@ This is an app designed and created for the benefit of the students. The RollVik
                         <viewControllerLayoutGuide type="bottom" id="WFB-3N-0C8"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5jK-60-jwy">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R3l-pN-Wli">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="454"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>

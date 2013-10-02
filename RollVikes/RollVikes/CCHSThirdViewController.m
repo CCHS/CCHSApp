@@ -52,7 +52,7 @@
     NetworkStatus status = [reachability currentReachabilityStatus];
     if (!status) {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Update Error"
-        message:@"This is a chached version of your ID information. You must be connected to the internet via a Central Catholic wifi for your ID to be updated."
+        message:@"This is a chached version of your ID information. You must be connected to the internet via a Central Catholic wifi for your ID to be updated and barcode to be shown."
         delegate:nil
         cancelButtonTitle:@"OK"
         otherButtonTitles:nil];

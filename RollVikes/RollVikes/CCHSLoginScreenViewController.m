@@ -20,7 +20,6 @@
 @synthesize originalCenter;
 
 
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -67,10 +66,6 @@
     [password resignFirstResponder];
 }
 
-- (NSData*) encryptString:(NSString*)plaintext withKey:(NSString*)key {
-	return [[plaintext dataUsingEncoding:NSUTF8StringEncoding] AES256EncryptWithKey:key];
-}
-
 - (IBAction)loginButton:(id)sender {
     NSString *usernameHold = username.text;
     NSString *usernameHold4Encryption = username.text;
@@ -84,13 +79,28 @@
          otherButtonTitles:nil];
         [alert show];
     }
+    
+    //====================================
     NSMutableString *encryptedID = [NSMutableString stringWithString:@""];
-    NSString *secretKey = @"1234567812345678";
-    NSData *usernameEncrypted = [self encryptString:usernameHold4Encryption withKey:secretKey ];
-    NSData *passwordEncrypted = [self encryptString:passwordHold withKey:secretKey ];
+    NSString *secretKey = @"12345678";
+    NSString *usernameEncrypted = [FBEncryptorAES encryptBase64String:usernameHold4Encryption
+                                                    keyString:secretKey
+                                                separateLines:NO];
+    NSString *passwordEncrypted = [FBEncryptorAES encryptBase64String:passwordHold
+                                                            keyString:secretKey
+                                                        separateLines:NO];
     NSLog(@"%@",usernameEncrypted);
     NSLog(@"%@",passwordEncrypted);
-
+    /* For testing of decryption...
+     
+    NSString* decryptedPass = [FBEncryptorAES decryptBase64String:passwordEncrypted
+                                                        keyString:secretKey];
+    NSString* decryptedUser = [FBEncryptorAES decryptBase64String:usernameEncrypted
+                                                    keyString:secretKey];
+    NSLog(@"%@",decryptedUser);
+    NSLog(@"%@",decryptedPass); */
+    //===================================
+    
     NSString *host=@"www.centralcatholichs.com";
     NSMutableString *login = [NSMutableString stringWithString:@"http://moodle.centralcatholichs.com/cchs_app_php/adLDAP/src/ldap1.0.1.php?user="];
     [login appendString:username.text];
@@ -105,15 +115,14 @@
     NetworkStatus status = [reachability currentReachabilityStatus];
     //NSLog(@"%u",status);
         
-    NSString *html = [loginAuthentication stringByEvaluatingJavaScriptFromString:@"document.body.innerText"];
+    NSString *html = [loginAuthentication stringByEvaluatingJavaScriptFromString:@"document.body.textContent"];
+    //NSInteger num = 0;
     NSString *stringWithText = @"Failed.";
     stringWithText = html;
     NSMutableString *stringWithIDNumber = [NSMutableString stringWithFormat:@""];
-    //NSInteger num = 0;
-    //NSLog(@"%@",stringWithText);
+    NSLog(@"%@",stringWithText);
     NSString *loginNo = @"Failed.";
     NSString *serverError = @"Unable to search LDAP server";
-    //NSLog(@"%@",loginYes);
     if ([[registeredCredentials objectForKey:username.text]isEqualToString:password.text]) {
         [stringWithText stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
         if (status&&(![stringWithText isEqualToString:loginNo])&&(![stringWithText length]==0)){
@@ -205,8 +214,6 @@
         }
     }
     
-    
-    //&&[string isEqualToString:loginYes]
     if (status&&(![stringWithText isEqualToString:loginNo])&&(![stringWithText isEqualToString:serverError])&&(![stringWithText length]==0)) {
         [registeredCredentials setObject:password.text forKey:username.text];
         [stringWithText stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -297,7 +304,6 @@
         NSLog(@"sorry");
         [errorMessage setHidden:NO];
         //num++;
-        //[self performSegueWithIdentifier:@"loginSegue" sender:sender];
     }
 
 }
