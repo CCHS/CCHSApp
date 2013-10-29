@@ -66,9 +66,13 @@
     [password resignFirstResponder];
 }
 
+//=========================================
+
+
 - (IBAction)loginButton:(id)sender {
     NSString *usernameHold = username.text;
-    NSString *usernameHold4Encryption = username.text;
+    //NSString *usernameHold4Encryption = username.text;
+    NSString *secretKey = @"86A52E51C54E55F846A48C487E4A4565";
     NSString *passwordHold = password.text;
     if (([usernameHold length]==0)||([passwordHold length]==0)) {
         [errorMessage setHidden:NO];
@@ -80,33 +84,25 @@
         [alert show];
     }
     
-    //====================================
+    //=========================================
     NSMutableString *encryptedID = [NSMutableString stringWithString:@""];
-    NSString *secretKey = @"12345678";
-    NSString *usernameEncrypted = [FBEncryptorAES encryptBase64String:usernameHold4Encryption
-                                                    keyString:secretKey
-                                                separateLines:NO];
-    NSString *passwordEncrypted = [FBEncryptorAES encryptBase64String:passwordHold
-                                                            keyString:secretKey
-                                                        separateLines:NO];
-    NSLog(@"%@",usernameEncrypted);
-    NSLog(@"%@",passwordEncrypted);
-    /* For testing of decryption...
-     
-    NSString* decryptedPass = [FBEncryptorAES decryptBase64String:passwordEncrypted
-                                                        keyString:secretKey];
-    NSString* decryptedUser = [FBEncryptorAES decryptBase64String:usernameEncrypted
-                                                    keyString:secretKey];
-    NSLog(@"%@",decryptedUser);
-    NSLog(@"%@",decryptedPass); */
-    //===================================
+    //NSString *encryptedUser = [usernameHold4Encryption AES256EncryptWithKey:secretKey];
+    //NSLog(@"%@",encryptedUser);
+    NSString *encryptedPass = [passwordHold AES256EncryptWithKey:secretKey];
+    //NSLog(@"%@",encryptedPass);
+    //=========================================
+    //for testing
+    //NSString *decryptedUser = [encryptedUser AES256DecryptWithKey:secretKey];
+    //NSLog(@"%@",decryptedUser);
+    //=========================================
     
     NSString *host=@"www.centralcatholichs.com";
-    NSMutableString *login = [NSMutableString stringWithString:@"http://moodle.centralcatholichs.com/cchs_app_php/adLDAP/src/ldap1.0.1.php?user="];
+    NSMutableString *login = [NSMutableString stringWithString:@"http://moodle.centralcatholichs.com/cchs_app_php/adLDAP/src/ldap.php?user="];
     [login appendString:username.text];
     NSString *loginpt2 = @"&password=";
     [login appendString:loginpt2];
-    [login appendString:password.text];
+    [login appendString:encryptedPass];
+    //NSLog(@"%@",login);
    NSURL *loginurl = [NSURL URLWithString:login];
     NSURLRequest *req2 = [NSURLRequest requestWithURL:loginurl];
    [loginAuthentication loadRequest:req2];
@@ -116,7 +112,6 @@
     //NSLog(@"%u",status);
         
     NSString *html = [loginAuthentication stringByEvaluatingJavaScriptFromString:@"document.body.textContent"];
-    //NSInteger num = 0;
     NSString *stringWithText = @"Failed.";
     stringWithText = html;
     NSMutableString *stringWithIDNumber = [NSMutableString stringWithFormat:@""];
@@ -303,7 +298,6 @@
     else {
         NSLog(@"sorry");
         [errorMessage setHidden:NO];
-        //num++;
     }
 
 }

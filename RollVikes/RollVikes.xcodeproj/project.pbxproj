@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0119C1A117E09E3900E6E189 /* BlueandGoldBackground3.png in Resources */ = {isa = PBXBuildFile; fileRef = 0119C1A017E09E3900E6E189 /* BlueandGoldBackground3.png */; };
 		0120D98F17A75172008561C4 /* CCHSLoginScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120D98E17A75172008561C4 /* CCHSLoginScreenViewController.m */; };
-		0122C49317FB996A009F376A /* FBEncryptorAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 0122C49017FB996A009F376A /* FBEncryptorAES.m */; };
-		0122C49417FB996A009F376A /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 0122C49217FB996A009F376A /* NSData+Base64.m */; };
 		0130F65017968C8100617404 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0130F64F17968C8100617404 /* MessageUI.framework */; };
 		016037CF17AB934300A3E30D /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 016037CE17AB934300A3E30D /* user.png */; };
 		016037D117AB936000A3E30D /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 016037D017AB936000A3E30D /* calendar.png */; };
@@ -48,6 +46,8 @@
 		01B1E63C1787D56100934794 /* CCHSAbtSchoolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E63B1787D56100934794 /* CCHSAbtSchoolView.m */; };
 		01B1E63F1787D58000934794 /* CCHSHandbookView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E63E1787D57F00934794 /* CCHSHandbookView.m */; };
 		01B1E6421787D59700934794 /* CCHSAbtAppView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E6411787D59700934794 /* CCHSAbtAppView.m */; };
+		01C39DF918048187006FEDF0 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C39DF618048187006FEDF0 /* NSData+AESCrypt.m */; };
+		01C39DFA18048187006FEDF0 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C39DF818048187006FEDF0 /* NSString+AESCrypt.m */; };
 		01C6715D17BDBACE0016CEC3 /* CCHS_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C6715C17BDBACE0016CEC3 /* CCHS_logo.png */; };
 		01C9643217DF5239004158DD /* BlueandGoldBackgroundiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C9642C17DF5239004158DD /* BlueandGoldBackgroundiPad.png */; };
 		01C9643317DF5239004158DD /* BlueandGoldBackgroundiPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C9642D17DF5239004158DD /* BlueandGoldBackgroundiPhone5.png */; };
@@ -74,10 +74,6 @@
 		0119C1A017E09E3900E6E189 /* BlueandGoldBackground3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueandGoldBackground3.png; sourceTree = "<group>"; };
 		0120D98D17A75172008561C4 /* CCHSLoginScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSLoginScreenViewController.h; sourceTree = "<group>"; };
 		0120D98E17A75172008561C4 /* CCHSLoginScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSLoginScreenViewController.m; sourceTree = "<group>"; };
-		0122C48F17FB996A009F376A /* FBEncryptorAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBEncryptorAES.h; sourceTree = "<group>"; };
-		0122C49017FB996A009F376A /* FBEncryptorAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBEncryptorAES.m; sourceTree = "<group>"; };
-		0122C49117FB996A009F376A /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		0122C49217FB996A009F376A /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		0130F64F17968C8100617404 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		016037CE17AB934300A3E30D /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		016037D017AB936000A3E30D /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
@@ -127,6 +123,10 @@
 		01B1E63E1787D57F00934794 /* CCHSHandbookView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSHandbookView.m; sourceTree = "<group>"; };
 		01B1E6401787D59700934794 /* CCHSAbtAppView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSAbtAppView.h; sourceTree = "<group>"; };
 		01B1E6411787D59700934794 /* CCHSAbtAppView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSAbtAppView.m; sourceTree = "<group>"; };
+		01C39DF518048187006FEDF0 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
+		01C39DF618048187006FEDF0 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
+		01C39DF718048187006FEDF0 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
+		01C39DF818048187006FEDF0 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
 		01C6715C17BDBACE0016CEC3 /* CCHS_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCHS_logo.png; sourceTree = "<group>"; };
 		01C9642C17DF5239004158DD /* BlueandGoldBackgroundiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueandGoldBackgroundiPad.png; sourceTree = "<group>"; };
 		01C9642D17DF5239004158DD /* BlueandGoldBackgroundiPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueandGoldBackgroundiPhone5.png; sourceTree = "<group>"; };
@@ -206,10 +206,10 @@
 		FAF22EE4176B4E7D00B59E55 /* RollVikes */ = {
 			isa = PBXGroup;
 			children = (
-				0122C48F17FB996A009F376A /* FBEncryptorAES.h */,
-				0122C49017FB996A009F376A /* FBEncryptorAES.m */,
-				0122C49117FB996A009F376A /* NSData+Base64.h */,
-				0122C49217FB996A009F376A /* NSData+Base64.m */,
+				01C39DF518048187006FEDF0 /* NSData+AESCrypt.h */,
+				01C39DF618048187006FEDF0 /* NSData+AESCrypt.m */,
+				01C39DF718048187006FEDF0 /* NSString+AESCrypt.h */,
+				01C39DF818048187006FEDF0 /* NSString+AESCrypt.m */,
 				0187C2FF17FA02E300235AAF /* NSData+Conversion.h */,
 				0187C30017FA02E300235AAF /* NSData+Conversion.m */,
 				FAF22EED176B4E7D00B59E55 /* CCHSAppDelegate.h */,
@@ -323,6 +323,11 @@
 				CLASSPREFIX = CCHS;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = CCHS;
+				TargetAttributes = {
+					FAF22EDA176B4E7D00B59E55 = {
+						DevelopmentTeam = W9P87A7WRN;
+					};
+				};
 			};
 			buildConfigurationList = FAF22ED6176B4E7D00B59E55 /* Build configuration list for PBXProject "RollVikes" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -391,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01C39DF918048187006FEDF0 /* NSData+AESCrypt.m in Sources */,
 				FAF22EEB176B4E7D00B59E55 /* main.m in Sources */,
 				FAF22EEF176B4E7D00B59E55 /* CCHSAppDelegate.m in Sources */,
 				FAF22EFE176B4E7D00B59E55 /* CCHSFirstViewController.m in Sources */,
@@ -400,15 +406,14 @@
 				01B1E6301786A16F00934794 /* CCHSMoreCentralLinkView.m in Sources */,
 				01B1E6331786A20300934794 /* CCHSMorePowerSchoolLinkView.m in Sources */,
 				01B1E6361786A30B00934794 /* CCHSMoreMoodleLink.m in Sources */,
-				0122C49317FB996A009F376A /* FBEncryptorAES.m in Sources */,
 				01B1E6391786A38300934794 /* CCHSMoreNavianceLink.m in Sources */,
 				01B1E63C1787D56100934794 /* CCHSAbtSchoolView.m in Sources */,
 				01B1E63F1787D58000934794 /* CCHSHandbookView.m in Sources */,
 				01B1E6421787D59700934794 /* CCHSAbtAppView.m in Sources */,
 				0120D98F17A75172008561C4 /* CCHSLoginScreenViewController.m in Sources */,
 				0187C30117FA02E300235AAF /* NSData+Conversion.m in Sources */,
-				0122C49417FB996A009F376A /* NSData+Base64.m in Sources */,
 				016037FE17B0B75900A3E30D /* Reachability.m in Sources */,
+				01C39DFA18048187006FEDF0 /* NSString+AESCrypt.m in Sources */,
 				016037FF17B0B75900A3E30D /* RNCachingURLProtocol.m in Sources */,
 				01F2349B17DA0B4D0012660E /* PasswordHelpViewController.m in Sources */,
 			);
@@ -456,8 +461,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nicholas Petro (2YKGZENGQW)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -472,7 +477,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3F800EAA-1AE8-4629-8393-D6F87DB5F42F";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -492,7 +497,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Nicholas Petro (2YKGZENGQW)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Central Catholic High School, Inc. (W9P87A7WRN)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -500,7 +505,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "3F800EAA-1AE8-4629-8393-D6F87DB5F42F";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -511,7 +516,7 @@
 		FAF22F0D176B4E7D00B59E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nicholas Petro (2YKGZENGQW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RollVikes/RollVikes-Prefix.pch";
@@ -527,7 +532,7 @@
 		FAF22F0E176B4E7D00B59E55 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nicholas Petro (2YKGZENGQW)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RollVikes/RollVikes-Prefix.pch";

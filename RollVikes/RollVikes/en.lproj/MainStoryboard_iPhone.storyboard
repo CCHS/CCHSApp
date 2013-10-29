@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="v8N-E6-7yj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="v8N-E6-7yj">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
@@ -652,7 +652,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ynq-oF-QAU" userLabel="Brothers">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                                <rect key="frame" x="0.0" y="63" width="320" height="455"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Since Central Catholic High School opened in 1927, the administration and faculty have been composed of Brothers of the Christian Schools, popularly called “The Christian Brothers” in the United States. This religious congregation of the Roman Catholic Church is a society of celibate laymen who profess the vows of poverty, chastity and obedience and are dedicated solely to the ministry of Christian education.
 
@@ -665,7 +665,7 @@ The Christian Brothers at Central Catholic, members of the congregation’s East
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuW-dP-bzQ" userLabel="Docs">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                                <rect key="frame" x="0.0" y="63" width="320" height="455"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Central Catholic High School Foundation Documents: 
 
@@ -732,7 +732,7 @@ Able to recognize and understand his responsibilities as part of a global commun
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2W0-IZ-kW6" userLabel="History">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                                <rect key="frame" x="0.0" y="63" width="320" height="455"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Shortly after the Most Reverend Hugh C. Boyle was elevated to the episcopacy, he began a secondary school expansion program in Pittsburgh.
 
@@ -753,7 +753,7 @@ In 2008, Central Catholic was incorporated with its own two-tiered Board of Dire
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2G-ke-2sv" userLabel="Overview">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                                <rect key="frame" x="0.0" y="63" width="320" height="455"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Since 1927 Central Catholic High School has been building a proud tradition of excellence as a high school for young men. The school is conducted by the Christian Brothers, diocesan clergy and dedicated laymen and laywomen under the auspices of the Diocese of Pittsburgh. 
 
@@ -772,17 +772,17 @@ Located in the Oakland area, the school is in the center of the educational and 
                         <constraints>
                             <constraint firstItem="Ynq-oF-QAU" firstAttribute="bottom" secondItem="a8b-pN-kWD" secondAttribute="bottom" constant="-50" id="39L-Ce-KYU"/>
                             <constraint firstItem="Z2G-ke-2sv" firstAttribute="bottom" secondItem="a8b-pN-kWD" secondAttribute="bottom" constant="-50" id="4h4-93-uQ9"/>
-                            <constraint firstItem="2W0-IZ-kW6" firstAttribute="top" secondItem="a8b-pN-kWD" secondAttribute="top" id="6E2-lC-6md"/>
+                            <constraint firstItem="2W0-IZ-kW6" firstAttribute="top" secondItem="a8b-pN-kWD" secondAttribute="top" constant="63" id="6E2-lC-6md"/>
                             <constraint firstItem="nuW-dP-bzQ" firstAttribute="trailing" secondItem="a8b-pN-kWD" secondAttribute="trailing" id="9HS-LH-W0C"/>
-                            <constraint firstItem="Z2G-ke-2sv" firstAttribute="top" secondItem="a8b-pN-kWD" secondAttribute="top" id="9e8-ac-fm6"/>
+                            <constraint firstItem="Z2G-ke-2sv" firstAttribute="top" secondItem="a8b-pN-kWD" secondAttribute="top" constant="63" id="9e8-ac-fm6"/>
                             <constraint firstItem="nuW-dP-bzQ" firstAttribute="leading" secondItem="a8b-pN-kWD" secondAttribute="leading" id="BVm-Qz-xww"/>
                             <constraint firstItem="Ynq-oF-QAU" firstAttribute="leading" secondItem="a8b-pN-kWD" secondAttribute="leading" id="WVp-eV-bK2"/>
-                            <constraint firstItem="nuW-dP-bzQ" firstAttribute="top" secondItem="a8b-pN-kWD" secondAttribute="top" id="Wlb-EE-KNo"/>
+                            <constraint firstItem="nuW-dP-bzQ" firstAttribute="top" secondItem="a8b-pN-kWD" secondAttribute="top" constant="63" id="Wlb-EE-KNo"/>
                             <constraint firstItem="2W0-IZ-kW6" firstAttribute="trailing" secondItem="a8b-pN-kWD" secondAttribute="trailing" id="gMc-bI-R27"/>
                             <constraint firstItem="2W0-IZ-kW6" firstAttribute="bottom" secondItem="a8b-pN-kWD" secondAttribute="bottom" constant="-50" id="hBC-sD-fFG"/>
                             <constraint firstItem="Z2G-ke-2sv" firstAttribute="trailing" secondItem="a8b-pN-kWD" secondAttribute="trailing" id="j3B-S8-P9p"/>
                             <constraint firstItem="nuW-dP-bzQ" firstAttribute="bottom" secondItem="a8b-pN-kWD" secondAttribute="bottom" constant="-50" id="pRR-VG-chW"/>
-                            <constraint firstItem="Ynq-oF-QAU" firstAttribute="top" secondItem="a8b-pN-kWD" secondAttribute="top" id="rFb-ls-HZy"/>
+                            <constraint firstItem="Ynq-oF-QAU" firstAttribute="top" secondItem="a8b-pN-kWD" secondAttribute="top" constant="63" id="rFb-ls-HZy"/>
                             <constraint firstItem="Z2G-ke-2sv" firstAttribute="leading" secondItem="a8b-pN-kWD" secondAttribute="leading" id="riq-tC-RIT"/>
                             <constraint firstItem="2W0-IZ-kW6" firstAttribute="leading" secondItem="a8b-pN-kWD" secondAttribute="leading" id="uFp-VU-lHt"/>
                             <constraint firstItem="Ynq-oF-QAU" firstAttribute="trailing" secondItem="a8b-pN-kWD" secondAttribute="trailing" id="yHh-Ng-PcB"/>

@@ -6,9 +6,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CommonCrypto/CommonCryptor.h>
 #import "Reachability.h"
-#import "NSData+Conversion.h"
-#import "FBEncryptorAES.h"
+#import "NSString+AESCrypt.h"
+
 
 @interface CCHSLoginScreenViewController : UIViewController<UIWebViewDelegate>{
     NSMutableDictionary *registeredCredentials;
