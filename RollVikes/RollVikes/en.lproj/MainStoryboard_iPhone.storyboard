@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="v8N-E6-7yj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="v8N-E6-7yj">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--View Controller - News-->
@@ -496,8 +496,8 @@
                                 </constraints>
                                 <dataDetectorType key="dataDetectorTypes"/>
                             </webView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Welcome to Central Catholic High School's RollVikes app. Please login to access you account information and enjoy!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QFg-MX-I1U">
-                                <rect key="frame" x="40" y="175" width="240" height="62"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Welcome to Central Catholic High School's RollVikes app. Please login to access your account information and enjoy!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFg-MX-I1U">
+                                <rect key="frame" x="40" y="186" width="240" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="Usy-hT-OZD"/>
                                     <constraint firstAttribute="height" constant="62" id="y4h-Tg-Jrb"/>
@@ -545,21 +545,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SimpleLogoV2.png" translatesAutoresizingMaskIntoConstraints="NO" id="7tV-we-qcV">
-                                <rect key="frame" x="77" y="20" width="165" height="201"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Please wait a moment and press Login again." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Euu-eV-mdA" userLabel="message2">
+                                <rect key="frame" x="39" y="396" width="240" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="165" id="s2v-OA-nmS"/>
-                                    <constraint firstAttribute="height" constant="201" id="xOi-Of-5cg"/>
+                                    <constraint firstAttribute="height" constant="48" id="p1I-LJ-DC7"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="centralcatholiccrest2.png" translatesAutoresizingMaskIntoConstraints="NO" id="7tV-we-qcV">
+                                <rect key="frame" x="82" y="27" width="156" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="156" id="s2v-OA-nmS"/>
+                                    <constraint firstAttribute="height" constant="156" id="xOi-Of-5cg"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="Euu-eV-mdA" firstAttribute="leading" secondItem="8By-d9-1CF" secondAttribute="leading" constant="-1" id="34L-Tt-Xdq"/>
                             <constraint firstItem="lxW-SA-czr" firstAttribute="top" secondItem="fDJ-UJ-ABY" secondAttribute="bottom" constant="8" symbolic="YES" id="44g-Ww-wCy"/>
+                            <constraint firstItem="Euu-eV-mdA" firstAttribute="top" secondItem="lxW-SA-czr" secondAttribute="bottom" constant="83" id="5k2-FC-9sS"/>
+                            <constraint firstItem="Euu-eV-mdA" firstAttribute="trailing" secondItem="8By-d9-1CF" secondAttribute="trailing" constant="-1" id="Bro-Fx-B5w"/>
                             <constraint firstItem="0vj-wh-8jP" firstAttribute="top" secondItem="8By-d9-1CF" secondAttribute="bottom" constant="8" symbolic="YES" id="G42-Gd-vgE"/>
-                            <constraint firstItem="fDJ-UJ-ABY" firstAttribute="top" secondItem="QFg-MX-I1U" secondAttribute="bottom" constant="8" symbolic="YES" id="JbC-tY-drV"/>
+                            <constraint firstItem="fDJ-UJ-ABY" firstAttribute="top" secondItem="QFg-MX-I1U" secondAttribute="bottom" constant="-3" id="JbC-tY-drV"/>
                             <constraint firstItem="8By-d9-1CF" firstAttribute="leading" secondItem="QFg-MX-I1U" secondAttribute="leading" id="WBL-iT-nX3"/>
                             <constraint firstItem="XVz-uf-djA" firstAttribute="top" secondItem="roj-UN-Lqj" secondAttribute="top" id="YSS-Ty-Ryq"/>
-                            <constraint firstItem="7tV-we-qcV" firstAttribute="top" secondItem="roj-UN-Lqj" secondAttribute="top" constant="20" symbolic="YES" id="ZCg-i9-Tj1"/>
+                            <constraint firstItem="7tV-we-qcV" firstAttribute="top" secondItem="roj-UN-Lqj" secondAttribute="top" constant="27" id="ZCg-i9-Tj1"/>
                             <constraint firstItem="8By-d9-1CF" firstAttribute="centerX" secondItem="XVz-uf-djA" secondAttribute="centerX" id="ZgS-qJ-cAQ"/>
                             <constraint firstItem="8By-d9-1CF" firstAttribute="trailing" secondItem="QFg-MX-I1U" secondAttribute="trailing" id="bh7-yH-XQ1"/>
                             <constraint firstItem="fDJ-UJ-ABY" firstAttribute="top" secondItem="roj-UN-Lqj" secondAttribute="top" constant="245" id="iDq-S8-Sw8"/>
@@ -586,6 +598,7 @@
                     <connections>
                         <outlet property="errorMessage" destination="8By-d9-1CF" id="eew-xn-hVo"/>
                         <outlet property="loginAuthentication" destination="azE-2D-Vpn" id="eHh-h3-DP6"/>
+                        <outlet property="message2" destination="Euu-eV-mdA" id="6Ki-RJ-xCS"/>
                         <outlet property="password" destination="lxW-SA-czr" id="gDK-wy-k61"/>
                         <outlet property="username" destination="fDJ-UJ-ABY" id="4KY-Ri-xzC"/>
                         <segue destination="4" kind="push" identifier="loginSegue" id="fsY-Kk-Ncs"/>
@@ -863,22 +876,22 @@ Located in the Oakland area, the school is in the center of the educational and 
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wmC-Zh-md4">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="522"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="457"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="CCHS_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="WP1-Oe-RnT">
-                                        <rect key="frame" x="85" y="21" width="150" height="150"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="centralcatholiccrest2.png" translatesAutoresizingMaskIntoConstraints="NO" id="WP1-Oe-RnT">
+                                        <rect key="frame" x="85" y="20" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="RRj-ie-L00"/>
                                             <constraint firstAttribute="width" constant="150" id="jUX-uo-biI"/>
                                         </constraints>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9qN-l5-jvV">
-                                        <rect key="frame" x="0.0" y="178" width="320" height="225"/>
+                                        <rect key="frame" x="0.0" y="177" width="320" height="225"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="225" id="x5X-qx-y9Z"/>
                                         </constraints>
                                         <string key="text">RollVikes
-Version 1.0.0
+Version 1.0.1
 
 This is an app designed and created for the benefit of the students. The RollVikes app was designed and built by senior Nick Petro ('14) as part of an independent study project. The work was done in collaboration with Mr. Allen, the head of technology integration here at Central Catholic. Some of the services within the app are secure and encrypted, and therefore may not be accessed outside of the limits of the school. For any questions or comments, please contact either Nick Petro, Mr. Allen (Campus Ministry), or Mr. Young (Tech Office). Feel free to email us with any comments, suggestions, or questions for or about the app using the button below. Enjoy!</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
@@ -901,21 +914,21 @@ This is an app designed and created for the benefit of the students. The RollVik
                                 <constraints>
                                     <constraint firstItem="9qN-l5-jvV" firstAttribute="leading" secondItem="wmC-Zh-md4" secondAttribute="leading" id="HKK-RD-9ZD"/>
                                     <constraint firstItem="9qN-l5-jvV" firstAttribute="centerX" secondItem="w4z-wL-uq3" secondAttribute="centerX" id="IjX-2Y-cUp"/>
-                                    <constraint firstAttribute="bottom" secondItem="w4z-wL-uq3" secondAttribute="bottom" constant="77" id="QOL-nA-BoJ"/>
+                                    <constraint firstAttribute="bottom" secondItem="w4z-wL-uq3" secondAttribute="bottom" constant="12" id="QOL-nA-BoJ"/>
                                     <constraint firstItem="9qN-l5-jvV" firstAttribute="trailing" secondItem="wmC-Zh-md4" secondAttribute="trailing" id="Y5S-4Q-1y9"/>
-                                    <constraint firstItem="WP1-Oe-RnT" firstAttribute="top" secondItem="wmC-Zh-md4" secondAttribute="top" constant="21" id="Yy2-Kl-dJR"/>
+                                    <constraint firstItem="WP1-Oe-RnT" firstAttribute="top" secondItem="wmC-Zh-md4" secondAttribute="top" constant="20" id="Yy2-Kl-dJR"/>
                                     <constraint firstItem="WP1-Oe-RnT" firstAttribute="centerX" secondItem="wmC-Zh-md4" secondAttribute="centerX" id="f4k-7N-1ov"/>
                                     <constraint firstItem="WP1-Oe-RnT" firstAttribute="centerX" secondItem="9qN-l5-jvV" secondAttribute="centerX" id="htP-gV-gpA"/>
                                     <constraint firstItem="9qN-l5-jvV" firstAttribute="top" secondItem="WP1-Oe-RnT" secondAttribute="bottom" constant="7" id="kD0-p7-CpX"/>
-                                    <constraint firstItem="w4z-wL-uq3" firstAttribute="top" secondItem="9qN-l5-jvV" secondAttribute="bottom" constant="8" id="lQg-Qr-L6S"/>
+                                    <constraint firstItem="w4z-wL-uq3" firstAttribute="top" secondItem="9qN-l5-jvV" secondAttribute="bottom" constant="9" id="lQg-Qr-L6S"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wmC-Zh-md4" firstAttribute="trailing" secondItem="E9k-dV-ZJZ" secondAttribute="trailing" id="XBe-Di-Cbq"/>
-                            <constraint firstItem="wmC-Zh-md4" firstAttribute="bottom" secondItem="E9k-dV-ZJZ" secondAttribute="bottom" constant="-46" id="aVa-8A-Srx"/>
-                            <constraint firstItem="wmC-Zh-md4" firstAttribute="top" secondItem="E9k-dV-ZJZ" secondAttribute="top" id="fnd-0P-DWj"/>
+                            <constraint firstItem="wmC-Zh-md4" firstAttribute="bottom" secondItem="E9k-dV-ZJZ" secondAttribute="bottom" constant="-47" id="aVa-8A-Srx"/>
+                            <constraint firstItem="wmC-Zh-md4" firstAttribute="top" secondItem="E9k-dV-ZJZ" secondAttribute="top" constant="64" id="fnd-0P-DWj"/>
                             <constraint firstItem="wmC-Zh-md4" firstAttribute="leading" secondItem="E9k-dV-ZJZ" secondAttribute="leading" id="n0t-g6-iy5"/>
                         </constraints>
                     </view>
@@ -1086,9 +1099,8 @@ This is an app designed and created for the benefit of the students. The RollVik
     <resources>
         <image name="BlueandGoldBackground.png" width="1200" height="1920"/>
         <image name="BlueandGoldBackground3.png" width="1200" height="1920"/>
-        <image name="CCHS_logo.png" width="160" height="174"/>
-        <image name="SimpleLogoV2.png" width="2550" height="3300"/>
         <image name="calendar.png" width="30" height="30"/>
+        <image name="centralcatholiccrest2.png" width="225" height="224"/>
         <image name="home.png" width="30" height="30"/>
         <image name="imageNA.jpg" width="200" height="231"/>
         <image name="user.png" width="30" height="30"/>

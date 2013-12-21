@@ -32,10 +32,8 @@
 		018800B117E100E6006F9B49 /* AppLogoV1Ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 018800B017E100E6006F9B49 /* AppLogoV1Ipad.png */; };
 		018800B317E100F1006F9B49 /* AppLogoV1IpadRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 018800B217E100F1006F9B49 /* AppLogoV1IpadRetina.png */; };
 		018800B517E102EC006F9B49 /* centralcatholiccrest2.png in Resources */ = {isa = PBXBuildFile; fileRef = 018800B417E102EC006F9B49 /* centralcatholiccrest2.png */; };
-		018800B917E11371006F9B49 /* SimpleLogoV2.png in Resources */ = {isa = PBXBuildFile; fileRef = 018800B817E11371006F9B49 /* SimpleLogoV2.png */; };
 		01A73CB317D6E694005A3250 /* NewsBuilding.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01A73CB217D6E694005A3250 /* NewsBuilding.jpg */; };
 		01A73CB517D6E73F005A3250 /* Auditorium.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01A73CB417D6E73F005A3250 /* Auditorium.jpg */; };
-		01A73CB717D6E7CA005A3250 /* #rollvikes.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 01A73CB617D6E7CA005A3250 /* #rollvikes.jpeg */; };
 		01B0D1C217ECEE270092112A /* imageNA.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01B0D1C117ECEE270092112A /* imageNA.jpg */; };
 		01B1E62A1785F4B900934794 /* CCHSThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E6291785F4B900934794 /* CCHSThirdViewController.m */; };
 		01B1E62D1785F5F200934794 /* CCHSFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E62C1785F5F200934794 /* CCHSFourthViewController.m */; };
@@ -48,14 +46,12 @@
 		01B1E6421787D59700934794 /* CCHSAbtAppView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01B1E6411787D59700934794 /* CCHSAbtAppView.m */; };
 		01C39DF918048187006FEDF0 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C39DF618048187006FEDF0 /* NSData+AESCrypt.m */; };
 		01C39DFA18048187006FEDF0 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C39DF818048187006FEDF0 /* NSString+AESCrypt.m */; };
-		01C6715D17BDBACE0016CEC3 /* CCHS_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C6715C17BDBACE0016CEC3 /* CCHS_logo.png */; };
 		01C9643217DF5239004158DD /* BlueandGoldBackgroundiPad.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C9642C17DF5239004158DD /* BlueandGoldBackgroundiPad.png */; };
 		01C9643317DF5239004158DD /* BlueandGoldBackgroundiPhone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C9642D17DF5239004158DD /* BlueandGoldBackgroundiPhone5.png */; };
 		01C9643417DF5239004158DD /* BlueandGoldBackgroundiPhoneRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C9642E17DF5239004158DD /* BlueandGoldBackgroundiPhoneRetina.png */; };
 		01C9643517DF5239004158DD /* BlueandGoldBackgroundiPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C9642F17DF5239004158DD /* BlueandGoldBackgroundiPhone.png */; };
 		01C9643617DF5239004158DD /* BlueandGoldBackgroundiPadRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C9643017DF5239004158DD /* BlueandGoldBackgroundiPadRetina.png */; };
 		01C9643717DF5239004158DD /* BlueandGoldBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C9643117DF5239004158DD /* BlueandGoldBackground.png */; };
-		01C9643917DF7478004158DD /* BlueandGoldBackground2.png in Resources */ = {isa = PBXBuildFile; fileRef = 01C9643817DF7478004158DD /* BlueandGoldBackground2.png */; };
 		01F2349817D78D8F0012660E /* centralcatholiccrest.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 01F2349717D78D8F0012660E /* centralcatholiccrest.jpg */; };
 		01F2349B17DA0B4D0012660E /* PasswordHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01F2349A17DA0B4D0012660E /* PasswordHelpViewController.m */; };
 		FAF22EDF176B4E7D00B59E55 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF22EDE176B4E7D00B59E55 /* UIKit.framework */; };
@@ -100,10 +96,8 @@
 		018800B017E100E6006F9B49 /* AppLogoV1Ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppLogoV1Ipad.png; path = ../AppLogoV1Ipad.png; sourceTree = "<group>"; };
 		018800B217E100F1006F9B49 /* AppLogoV1IpadRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppLogoV1IpadRetina.png; path = ../AppLogoV1IpadRetina.png; sourceTree = "<group>"; };
 		018800B417E102EC006F9B49 /* centralcatholiccrest2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = centralcatholiccrest2.png; path = "../../../CCHS App Logos and Such/centralcatholiccrest2.png"; sourceTree = "<group>"; };
-		018800B817E11371006F9B49 /* SimpleLogoV2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SimpleLogoV2.png; path = "../../../CCHS App Logos and Such/SimpleLogoV2.png"; sourceTree = "<group>"; };
 		01A73CB217D6E694005A3250 /* NewsBuilding.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NewsBuilding.jpg; sourceTree = "<group>"; };
 		01A73CB417D6E73F005A3250 /* Auditorium.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Auditorium.jpg; sourceTree = "<group>"; };
-		01A73CB617D6E7CA005A3250 /* #rollvikes.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "#rollvikes.jpeg"; sourceTree = "<group>"; };
 		01B0D1C117ECEE270092112A /* imageNA.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imageNA.jpg; sourceTree = "<group>"; };
 		01B1E6281785F4B900934794 /* CCHSThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHSThirdViewController.h; sourceTree = "<group>"; };
 		01B1E6291785F4B900934794 /* CCHSThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHSThirdViewController.m; sourceTree = "<group>"; };
@@ -127,14 +121,12 @@
 		01C39DF618048187006FEDF0 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
 		01C39DF718048187006FEDF0 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
 		01C39DF818048187006FEDF0 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
-		01C6715C17BDBACE0016CEC3 /* CCHS_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CCHS_logo.png; sourceTree = "<group>"; };
 		01C9642C17DF5239004158DD /* BlueandGoldBackgroundiPad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueandGoldBackgroundiPad.png; sourceTree = "<group>"; };
 		01C9642D17DF5239004158DD /* BlueandGoldBackgroundiPhone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueandGoldBackgroundiPhone5.png; sourceTree = "<group>"; };
 		01C9642E17DF5239004158DD /* BlueandGoldBackgroundiPhoneRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueandGoldBackgroundiPhoneRetina.png; sourceTree = "<group>"; };
 		01C9642F17DF5239004158DD /* BlueandGoldBackgroundiPhone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueandGoldBackgroundiPhone.png; sourceTree = "<group>"; };
 		01C9643017DF5239004158DD /* BlueandGoldBackgroundiPadRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueandGoldBackgroundiPadRetina.png; sourceTree = "<group>"; };
 		01C9643117DF5239004158DD /* BlueandGoldBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueandGoldBackground.png; sourceTree = "<group>"; };
-		01C9643817DF7478004158DD /* BlueandGoldBackground2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BlueandGoldBackground2.png; sourceTree = "<group>"; };
 		01F2349717D78D8F0012660E /* centralcatholiccrest.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = centralcatholiccrest.jpg; sourceTree = "<group>"; };
 		01F2349917DA0B4D0012660E /* PasswordHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordHelpViewController.h; sourceTree = "<group>"; };
 		01F2349A17DA0B4D0012660E /* PasswordHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordHelpViewController.m; sourceTree = "<group>"; };
@@ -222,8 +214,6 @@
 				0120D98D17A75172008561C4 /* CCHSLoginScreenViewController.h */,
 				0120D98E17A75172008561C4 /* CCHSLoginScreenViewController.m */,
 				FAF22EF9176B4E7D00B59E55 /* MainStoryboard_iPad.storyboard */,
-				01F2349917DA0B4D0012660E /* PasswordHelpViewController.h */,
-				01F2349A17DA0B4D0012660E /* PasswordHelpViewController.m */,
 				FAF22EFC176B4E7D00B59E55 /* CCHSFirstViewController.h */,
 				FAF22EFD176B4E7D00B59E55 /* CCHSFirstViewController.m */,
 				FAF22F03176B4E7D00B59E55 /* CCHSSecondViewController.h */,
@@ -240,6 +230,8 @@
 				01B1E6351786A30B00934794 /* CCHSMoreMoodleLink.m */,
 				01B1E6371786A38300934794 /* CCHSMoreNavianceLink.h */,
 				01B1E6381786A38300934794 /* CCHSMoreNavianceLink.m */,
+				01F2349917DA0B4D0012660E /* PasswordHelpViewController.h */,
+				01F2349A17DA0B4D0012660E /* PasswordHelpViewController.m */,
 				01B1E63A1787D56100934794 /* CCHSAbtSchoolView.h */,
 				01B1E63B1787D56100934794 /* CCHSAbtSchoolView.m */,
 				01B1E63D1787D57F00934794 /* CCHSHandbookView.h */,
@@ -255,14 +247,12 @@
 			isa = PBXGroup;
 			children = (
 				01B0D1C117ECEE270092112A /* imageNA.jpg */,
-				018800B817E11371006F9B49 /* SimpleLogoV2.png */,
 				018800B417E102EC006F9B49 /* centralcatholiccrest2.png */,
 				018800B217E100F1006F9B49 /* AppLogoV1IpadRetina.png */,
 				018800B017E100E6006F9B49 /* AppLogoV1Ipad.png */,
 				018800AE17E100D3006F9B49 /* AppLogoV1IphoneRetina.png */,
 				018800AC17E100C5006F9B49 /* AppLogoV1Iphone.png */,
 				0119C1A017E09E3900E6E189 /* BlueandGoldBackground3.png */,
-				01C9643817DF7478004158DD /* BlueandGoldBackground2.png */,
 				01C9642C17DF5239004158DD /* BlueandGoldBackgroundiPad.png */,
 				01C9642D17DF5239004158DD /* BlueandGoldBackgroundiPhone5.png */,
 				01C9642E17DF5239004158DD /* BlueandGoldBackgroundiPhoneRetina.png */,
@@ -273,12 +263,10 @@
 				01A73CB417D6E73F005A3250 /* Auditorium.jpg */,
 				01A73CB217D6E694005A3250 /* NewsBuilding.jpg */,
 				0160380017B2D67400A3E30D /* handbook13.pdf */,
-				01A73CB617D6E7CA005A3250 /* #rollvikes.jpeg */,
 				016037F617B0AEFF00A3E30D /* Default-Portrait@2x~ipad.png */,
 				016037F417B0AEF900A3E30D /* Default-Portrait~ipad.png */,
 				016037F217B0AEE900A3E30D /* Default-568h@2x.png */,
 				016037F017B0AEE000A3E30D /* Default@2x.png */,
-				01C6715C17BDBACE0016CEC3 /* CCHS_logo.png */,
 				016037EE17B0AEDB00A3E30D /* Default.png */,
 				016037D817AB93E600A3E30D /* home2x.png */,
 				016037D617AB93CD00A3E30D /* calendar2x.png */,
@@ -325,7 +313,7 @@
 				ORGANIZATIONNAME = CCHS;
 				TargetAttributes = {
 					FAF22EDA176B4E7D00B59E55 = {
-						DevelopmentTeam = W9P87A7WRN;
+						DevelopmentTeam = 7QFB3LWBKV;
 					};
 				};
 			};
@@ -366,10 +354,8 @@
 				016037F517B0AEF900A3E30D /* Default-Portrait~ipad.png in Resources */,
 				016037F717B0AEFF00A3E30D /* Default-Portrait@2x~ipad.png in Resources */,
 				0160380117B2D67400A3E30D /* handbook13.pdf in Resources */,
-				01C6715D17BDBACE0016CEC3 /* CCHS_logo.png in Resources */,
 				01A73CB317D6E694005A3250 /* NewsBuilding.jpg in Resources */,
 				01A73CB517D6E73F005A3250 /* Auditorium.jpg in Resources */,
-				01A73CB717D6E7CA005A3250 /* #rollvikes.jpeg in Resources */,
 				01F2349817D78D8F0012660E /* centralcatholiccrest.jpg in Resources */,
 				01C9643217DF5239004158DD /* BlueandGoldBackgroundiPad.png in Resources */,
 				01C9643317DF5239004158DD /* BlueandGoldBackgroundiPhone5.png in Resources */,
@@ -379,13 +365,11 @@
 				01C9643617DF5239004158DD /* BlueandGoldBackgroundiPadRetina.png in Resources */,
 				0119C1A117E09E3900E6E189 /* BlueandGoldBackground3.png in Resources */,
 				01C9643717DF5239004158DD /* BlueandGoldBackground.png in Resources */,
-				01C9643917DF7478004158DD /* BlueandGoldBackground2.png in Resources */,
 				018800AD17E100C5006F9B49 /* AppLogoV1Iphone.png in Resources */,
 				018800AF17E100D3006F9B49 /* AppLogoV1IphoneRetina.png in Resources */,
 				018800B117E100E6006F9B49 /* AppLogoV1Ipad.png in Resources */,
 				018800B317E100F1006F9B49 /* AppLogoV1IpadRetina.png in Resources */,
 				018800B517E102EC006F9B49 /* centralcatholiccrest2.png in Resources */,
-				018800B917E11371006F9B49 /* SimpleLogoV2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,8 +445,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Central Catholic High School, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Central Catholic High School, Inc.";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -477,8 +461,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "3F800EAA-1AE8-4629-8393-D6F87DB5F42F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "8CF1F970-232D-4607-988B-6C54594D15F8";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8CF1F970-232D-4607-988B-6C54594D15F8";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -496,8 +480,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nicholas Petro (2YKGZENGQW)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Central Catholic High School, Inc. (W9P87A7WRN)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Central Catholic High School, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Central Catholic High School, Inc.";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -505,8 +489,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "3F800EAA-1AE8-4629-8393-D6F87DB5F42F";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "8CF1F970-232D-4607-988B-6C54594D15F8";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8CF1F970-232D-4607-988B-6C54594D15F8";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -522,9 +506,11 @@
 				GCC_PREFIX_HEADER = "RollVikes/RollVikes-Prefix.pch";
 				INFOPLIST_FILE = "RollVikes/RollVikes-Info.plist";
 				INFOPLIST_PREPROCESS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -538,9 +524,11 @@
 				GCC_PREFIX_HEADER = "RollVikes/RollVikes-Prefix.pch";
 				INFOPLIST_FILE = "RollVikes/RollVikes-Info.plist";
 				INFOPLIST_PREPROCESS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

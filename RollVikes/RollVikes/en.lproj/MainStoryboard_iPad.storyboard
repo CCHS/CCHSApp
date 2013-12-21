@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="tNp-fp-RIm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="tNp-fp-RIm">
     <dependencies>
         <deployment defaultVersion="1552" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--First View Controller - News-->
@@ -10,32 +10,25 @@
             <objects>
                 <viewController id="2" customClass="CCHSFirstViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pbW-El-fKO"/>
-                        <viewControllerLayoutGuide type="bottom" id="n9H-vq-c7c"/>
+                        <viewControllerLayoutGuide type="top" id="BVU-cM-Mcc"/>
+                        <viewControllerLayoutGuide type="bottom" id="blh-nu-QW6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="17">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7mx-UM-2zf">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7mx-UM-2zf">
                                 <rect key="frame" x="0.0" y="194" width="768" height="781"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
-                            <webView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNl-CT-Abl">
+                            <webView contentMode="scaleAspectFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vNl-CT-Abl">
                                 <rect key="frame" x="124" y="194" width="520" height="781"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="781" id="DhQ-Ew-kwD"/>
-                                    <constraint firstAttribute="width" constant="520" id="R3t-A2-RsI"/>
-                                </constraints>
                             </webView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="NewsBuilding.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wz1-fX-DFn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" fixedFrame="YES" image="NewsBuilding.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wz1-fX-DFn">
                                 <rect key="frame" x="0.0" y="64" width="768" height="130"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="5fw-67-hGv"/>
-                                </constraints>
                             </imageView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hpD-GD-kLH">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hpD-GD-kLH">
                                 <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                                 <items>
                                     <navigationItem id="A0N-ZC-rJL">
@@ -57,20 +50,6 @@
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="vNl-CT-Abl" firstAttribute="centerX" secondItem="7mx-UM-2zf" secondAttribute="centerX" id="1aI-1R-ESw"/>
-                            <constraint firstItem="vNl-CT-Abl" firstAttribute="top" secondItem="7mx-UM-2zf" secondAttribute="top" id="4Qm-dA-Dtn"/>
-                            <constraint firstItem="wz1-fX-DFn" firstAttribute="trailing" secondItem="17" secondAttribute="trailing" id="Ai7-JS-c0t"/>
-                            <constraint firstItem="hpD-GD-kLH" firstAttribute="trailing" secondItem="wz1-fX-DFn" secondAttribute="trailing" id="CC7-Yx-ue7"/>
-                            <constraint firstItem="vNl-CT-Abl" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" constant="-49" id="LeZ-Hw-cJz"/>
-                            <constraint firstItem="wz1-fX-DFn" firstAttribute="leading" secondItem="7mx-UM-2zf" secondAttribute="leading" id="S9H-6q-Z4r"/>
-                            <constraint firstItem="wz1-fX-DFn" firstAttribute="leading" secondItem="hpD-GD-kLH" secondAttribute="leading" id="SVL-vo-Cj8"/>
-                            <constraint firstItem="hpD-GD-kLH" firstAttribute="leading" secondItem="17" secondAttribute="leading" id="Wgb-dh-I0T"/>
-                            <constraint firstItem="wz1-fX-DFn" firstAttribute="top" secondItem="hpD-GD-kLH" secondAttribute="bottom" id="cuF-ha-LbG"/>
-                            <constraint firstItem="7mx-UM-2zf" firstAttribute="bottom" secondItem="17" secondAttribute="bottom" constant="-49" id="d6y-M6-Fo4"/>
-                            <constraint firstItem="wz1-fX-DFn" firstAttribute="trailing" secondItem="7mx-UM-2zf" secondAttribute="trailing" id="lQK-jv-g33"/>
-                            <constraint firstItem="hpD-GD-kLH" firstAttribute="top" secondItem="17" secondAttribute="top" constant="20" id="zgw-fZ-XL8"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="News" image="home.png" id="7"/>
                     <connections>
@@ -88,45 +67,28 @@
             <objects>
                 <viewController id="3" userLabel="Second View Controller - Schedule" customClass="CCHSSecondViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="n6h-qS-k3p"/>
-                        <viewControllerLayoutGuide type="bottom" id="jOY-ga-0gb"/>
+                        <viewControllerLayoutGuide type="top" id="m8E-X5-OBq"/>
+                        <viewControllerLayoutGuide type="bottom" id="0y0-JC-ZBa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="16">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23">
+                            <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="23">
                                 <rect key="frame" x="0.0" y="20" width="768" height="44"/>
                                 <items>
                                     <navigationItem title="Schedule" id="24"/>
                                 </items>
                             </navigationBar>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="id4-vK-T7j">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="id4-vK-T7j">
                                 <rect key="frame" x="0.0" y="64" width="768" height="692"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="692" id="pQG-zf-5kg"/>
-                                </constraints>
                             </webView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" image="Auditorium.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bgQ-ev-ZYO">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottom" fixedFrame="YES" image="Auditorium.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bgQ-ev-ZYO">
                                 <rect key="frame" x="0.0" y="754" width="768" height="219"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="219" id="yuH-DT-FeT"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="bgQ-ev-ZYO" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="59K-RJ-Qb3"/>
-                            <constraint firstItem="id4-vK-T7j" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="Ii7-ez-h2Y"/>
-                            <constraint firstItem="id4-vK-T7j" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" id="NXh-6R-CAj"/>
-                            <constraint firstItem="bgQ-ev-ZYO" firstAttribute="bottom" secondItem="16" secondAttribute="bottom" constant="-51" id="Q5S-rS-wib"/>
-                            <constraint firstItem="bgQ-ev-ZYO" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" id="Uci-F5-rgg"/>
-                            <constraint firstItem="23" firstAttribute="top" secondItem="16" secondAttribute="top" constant="20" id="YQd-P8-ET5"/>
-                            <constraint firstItem="23" firstAttribute="trailing" secondItem="16" secondAttribute="trailing" id="eH6-Me-VTD"/>
-                            <constraint firstItem="23" firstAttribute="leading" secondItem="16" secondAttribute="leading" id="kTD-uS-vbp"/>
-                            <constraint firstItem="id4-vK-T7j" firstAttribute="top" secondItem="23" secondAttribute="bottom" id="yJj-yL-Vtq"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Schedule" image="calendar.png" id="6"/>
                     <connections>
@@ -142,114 +104,78 @@
             <objects>
                 <viewController id="dtg-xq-xdO" customClass="CCHSLoginScreenViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kSm-HD-V4d"/>
-                        <viewControllerLayoutGuide type="bottom" id="Pgp-8e-4vB"/>
+                        <viewControllerLayoutGuide type="top" id="6iP-Re-Zej"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sar-m8-bWV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hbs-uX-HOj" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" image="BlueandGoldBackground3.png" translatesAutoresizingMaskIntoConstraints="NO" id="cCE-O4-yer">
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="BlueandGoldBackground3.png" translatesAutoresizingMaskIntoConstraints="NO" id="cCE-O4-yer">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="pLk-rl-3bN">
-                                <rect key="frame" x="224" y="497" width="320" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="320" id="QiY-wu-Y9w"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                                <connections>
-                                    <action selector="enter2:" destination="dtg-xq-xdO" eventType="editingDidEndOnExit" id="Hmw-5P-N6S"/>
-                                </connections>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ejq-jw-8cY">
-                                <rect key="frame" x="224" y="535" width="320" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                <connections>
-                                    <action selector="enter2:" destination="dtg-xq-xdO" eventType="editingDidEndOnExit" id="J4I-Gc-AO4"/>
-                                </connections>
-                            </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Incorrect username or password." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gEG-Sl-Zun">
-                                <rect key="frame" x="264" y="611" width="240" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="BVT-xk-bwH"/>
-                                    <constraint firstAttribute="height" constant="31" id="xNG-2y-7BK"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Incorrect username or password." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gEG-Sl-Zun">
+                                <rect key="frame" x="264" y="560" width="240" height="32"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIL-EA-Noh">
-                                <rect key="frame" x="302" y="650" width="164" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="164" id="7bP-Rl-Veb"/>
-                                </constraints>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Please wait a moment and press Login again." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="57f-sZ-MZs">
+                                <rect key="frame" x="264" y="555" width="240" height="48"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIL-EA-Noh">
+                                <rect key="frame" x="302" y="611" width="164" height="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="loginButton:" destination="dtg-xq-xdO" eventType="touchUpInside" id="Uu4-Xv-aVq"/>
+                                    <action selector="loginButton:" destination="dtg-xq-xdO" eventType="touchUpInside" id="pce-Ug-eq7"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ckq-iH-h5h">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ckq-iH-h5h">
                                 <rect key="frame" x="0.0" y="847" width="0.0" height="0.0"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" id="1bq-Xk-J0o"/>
-                                    <constraint firstAttribute="height" id="Ned-O1-RPd"/>
-                                </constraints>
                             </webView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="Welcome to Central Catholic High School's RollVikes app. Please login to access you account information and enjoy!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m5n-Tv-g8V">
-                                <rect key="frame" x="214" y="418" width="340" height="71"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="71" id="Ru7-tg-OUL"/>
-                                    <constraint firstAttribute="width" constant="340" id="UuV-1e-kk5"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="centralcatholiccrest2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ccW-hA-XXH">
+                                <rect key="frame" x="247" y="89" width="275" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" editable="NO" text="Welcome to Central Catholic High School's RollVikes app. Please login to access your account information and enjoy!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oi8-MZ-EuE">
+                                <rect key="frame" x="224" y="387" width="340" height="72"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SimpleLogoV2.png" translatesAutoresizingMaskIntoConstraints="NO" id="3mn-GS-GfL">
-                                <rect key="frame" x="191" y="38" width="387" height="451"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="387" id="qxW-c5-aDQ"/>
-                                </constraints>
-                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="HDO-jd-dZq">
+                                <rect key="frame" x="234" y="512" width="320" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="enter2:" destination="dtg-xq-xdO" eventType="editingDidEndOnExit" id="67D-yQ-sje"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="shy-Iy-TTt">
+                                <rect key="frame" x="234" y="478" width="320" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="enter2:" destination="dtg-xq-xdO" eventType="editingDidEndOnExit" id="Xko-Zo-eKK"/>
+                                </connections>
+                            </textField>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="pLk-rl-3bN" firstAttribute="centerY" secondItem="cCE-O4-yer" secondAttribute="centerY" id="1Dn-Ic-VtW"/>
-                            <constraint firstItem="ZIL-EA-Noh" firstAttribute="centerX" secondItem="gEG-Sl-Zun" secondAttribute="centerX" id="2Ka-kv-3HL"/>
-                            <constraint firstItem="gEG-Sl-Zun" firstAttribute="top" secondItem="ejq-jw-8cY" secondAttribute="bottom" constant="46" id="5QY-3u-tex"/>
-                            <constraint firstItem="ZIL-EA-Noh" firstAttribute="top" secondItem="gEG-Sl-Zun" secondAttribute="bottom" constant="8" symbolic="YES" id="5ej-ys-68D"/>
-                            <constraint firstItem="pLk-rl-3bN" firstAttribute="top" secondItem="m5n-Tv-g8V" secondAttribute="bottom" constant="8" symbolic="YES" id="8ZO-Oc-6II"/>
-                            <constraint firstItem="ejq-jw-8cY" firstAttribute="trailing" secondItem="pLk-rl-3bN" secondAttribute="trailing" id="BxI-6p-HID"/>
-                            <constraint firstItem="cCE-O4-yer" firstAttribute="top" secondItem="Hbs-uX-HOj" secondAttribute="top" id="CZd-yv-A7L"/>
-                            <constraint firstItem="cCE-O4-yer" firstAttribute="trailing" secondItem="Hbs-uX-HOj" secondAttribute="trailing" id="Ee5-Ju-fcI"/>
-                            <constraint firstItem="cCE-O4-yer" firstAttribute="leading" secondItem="Hbs-uX-HOj" secondAttribute="leading" id="JZA-5p-trf"/>
-                            <constraint firstItem="cCE-O4-yer" firstAttribute="centerX" secondItem="pLk-rl-3bN" secondAttribute="centerX" id="ML6-ax-4vz"/>
-                            <constraint firstItem="cCE-O4-yer" firstAttribute="bottom" secondItem="Hbs-uX-HOj" secondAttribute="bottom" id="OTW-Zw-QOd"/>
-                            <constraint firstItem="ejq-jw-8cY" firstAttribute="leading" secondItem="pLk-rl-3bN" secondAttribute="leading" id="UJL-Xi-p1N"/>
-                            <constraint firstItem="gEG-Sl-Zun" firstAttribute="centerX" secondItem="ejq-jw-8cY" secondAttribute="centerX" id="UPz-MZ-Co6"/>
-                            <constraint firstItem="pLk-rl-3bN" firstAttribute="top" secondItem="3mn-GS-GfL" secondAttribute="bottom" constant="8" symbolic="YES" id="b7i-5h-dcA"/>
-                            <constraint firstItem="gEG-Sl-Zun" firstAttribute="centerX" secondItem="3mn-GS-GfL" secondAttribute="centerX" id="el7-PA-rSQ"/>
-                            <constraint firstItem="ckq-iH-h5h" firstAttribute="leading" secondItem="cCE-O4-yer" secondAttribute="leading" id="ihV-1r-W6d"/>
-                            <constraint firstItem="ejq-jw-8cY" firstAttribute="top" secondItem="pLk-rl-3bN" secondAttribute="bottom" constant="8" symbolic="YES" id="mcI-aG-bA7"/>
-                            <constraint firstItem="pLk-rl-3bN" firstAttribute="centerX" secondItem="m5n-Tv-g8V" secondAttribute="centerX" id="oTr-yA-t6u"/>
-                            <constraint firstAttribute="bottom" secondItem="ckq-iH-h5h" secondAttribute="bottom" constant="177" id="qNN-VR-SBw"/>
-                            <constraint firstItem="3mn-GS-GfL" firstAttribute="top" secondItem="kSm-HD-V4d" secondAttribute="bottom" constant="18" id="vPa-Pw-29V"/>
-                        </constraints>
                         <connections>
                             <action selector="backgroundTouched2:" destination="dtg-xq-xdO" eventType="touchDown" id="RED-Bz-L1n"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="NOE-h9-ZyB"/>
                     <connections>
-                        <outlet property="errorMessage" destination="gEG-Sl-Zun" id="Mpg-af-w9E"/>
+                        <outlet property="errorMessage" destination="gEG-Sl-Zun" id="uDx-CY-jax"/>
                         <outlet property="loginAuthentication" destination="ckq-iH-h5h" id="wic-sU-u1R"/>
-                        <outlet property="password" destination="ejq-jw-8cY" id="PDj-A3-gjp"/>
-                        <outlet property="username" destination="pLk-rl-3bN" id="keL-6D-WYb"/>
+                        <outlet property="message2" destination="57f-sZ-MZs" id="yqH-Aq-fko"/>
+                        <outlet property="password" destination="HDO-jd-dZq" id="wvZ-f5-qUg"/>
+                        <outlet property="username" destination="shy-Iy-TTt" id="JBc-Iq-wGI"/>
                         <segue destination="4" kind="push" identifier="loginSegue" id="sXm-ER-kJZ"/>
                     </connections>
                 </viewController>
@@ -513,25 +439,19 @@
             <objects>
                 <viewController id="9Pt-WF-GGU" customClass="PasswordHelpViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="kN9-ai-jtr"/>
-                        <viewControllerLayoutGuide type="bottom" id="kAB-Nc-ouY"/>
+                        <viewControllerLayoutGuide type="top" id="57e-ft-dmS"/>
+                        <viewControllerLayoutGuide type="bottom" id="KAJ-c6-cbZ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ijy-I7-PTS">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-Qg-PsW">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-Qg-PsW">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="NXA-Qg-PsW" firstAttribute="leading" secondItem="ijy-I7-PTS" secondAttribute="leading" id="2J3-13-qJl"/>
-                            <constraint firstItem="NXA-Qg-PsW" firstAttribute="top" secondItem="ijy-I7-PTS" secondAttribute="top" id="8Xl-Ea-Zjz"/>
-                            <constraint firstItem="NXA-Qg-PsW" firstAttribute="bottom" secondItem="ijy-I7-PTS" secondAttribute="bottom" id="ZO4-2d-IiT"/>
-                            <constraint firstItem="NXA-Qg-PsW" firstAttribute="trailing" secondItem="ijy-I7-PTS" secondAttribute="trailing" id="oZH-Rp-dSt"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PassHelp" id="9Ef-La-IeA"/>
                     <connections>
@@ -547,88 +467,46 @@
             <objects>
                 <viewController id="S69-ao-Pbd" customClass="CCHSThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Q1J-ta-Nch"/>
-                        <viewControllerLayoutGuide type="bottom" id="rFh-Wj-3E3"/>
+                        <viewControllerLayoutGuide type="top" id="aWD-uC-juJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="9WF-eh-SIP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Jhg-HM-2k6">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NwU-5i-o7A">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NwU-5i-o7A">
                                 <rect key="frame" x="0.0" y="20" width="768" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="34c-L4-USt"/>
-                                </constraints>
                                 <items>
                                     <navigationItem title="Student ID" id="ODY-aI-wUS"/>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueandGoldBackground3.png" translatesAutoresizingMaskIntoConstraints="NO" id="qy6-GQ-0BF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlueandGoldBackground3.png" translatesAutoresizingMaskIntoConstraints="NO" id="qy6-GQ-0BF">
                                 <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="V9v-O2-tzQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="V9v-O2-tzQ">
                                 <rect key="frame" x="242" y="547" width="284" height="377"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="377" id="bUh-wa-4UK"/>
-                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="imageNA.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="syo-D4-aeR">
                                 <rect key="frame" x="242" y="203" width="284" height="381"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fmU-ZX-k7p">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fmU-ZX-k7p">
                                 <rect key="frame" x="242" y="203" width="284" height="381"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="284" id="X2g-V0-KFP"/>
-                                    <constraint firstAttribute="height" constant="381" id="gkn-hW-6mI"/>
-                                </constraints>
                             </imageView>
-                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="egA-Zw-C6g">
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="egA-Zw-C6g">
                                 <rect key="frame" x="275" y="582" width="218" height="293"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="293" id="4ig-K5-Yea"/>
-                                    <constraint firstAttribute="width" constant="218" id="p7d-KZ-HWo"/>
-                                </constraints>
                             </webView>
-                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DSX-s3-45U">
+                            <webView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DSX-s3-45U">
                                 <rect key="frame" x="284" y="874" width="200" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="1Rd-eF-cIz"/>
-                                    <constraint firstAttribute="width" constant="200" id="LwM-AQ-NVT"/>
-                                </constraints>
                             </webView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="centralcatholiccrest2.png" translatesAutoresizingMaskIntoConstraints="NO" id="c96-P9-IYH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="centralcatholiccrest2.png" translatesAutoresizingMaskIntoConstraints="NO" id="c96-P9-IYH">
                                 <rect key="frame" x="334" y="104" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Leq-8D-nPK"/>
-                                    <constraint firstAttribute="width" constant="100" id="qsp-fN-X60"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="qy6-GQ-0BF" firstAttribute="top" secondItem="NwU-5i-o7A" secondAttribute="bottom" id="0Qk-mo-D9x"/>
-                            <constraint firstItem="NwU-5i-o7A" firstAttribute="top" secondItem="Jhg-HM-2k6" secondAttribute="top" constant="20" id="1s0-fC-3nE"/>
-                            <constraint firstAttribute="bottom" secondItem="egA-Zw-C6g" secondAttribute="bottom" constant="149" id="2v9-Jc-rF0"/>
-                            <constraint firstAttribute="bottom" secondItem="qy6-GQ-0BF" secondAttribute="bottom" constant="49" id="47E-ek-Phb"/>
-                            <constraint firstItem="fmU-ZX-k7p" firstAttribute="top" secondItem="Jhg-HM-2k6" secondAttribute="top" constant="203" id="4Qf-IC-X7J"/>
-                            <constraint firstItem="V9v-O2-tzQ" firstAttribute="trailing" secondItem="fmU-ZX-k7p" secondAttribute="trailing" id="6RN-re-zpQ"/>
-                            <constraint firstItem="NwU-5i-o7A" firstAttribute="leading" secondItem="Jhg-HM-2k6" secondAttribute="leading" id="9Qq-rz-cwM"/>
-                            <constraint firstItem="c96-P9-IYH" firstAttribute="centerX" secondItem="NwU-5i-o7A" secondAttribute="centerX" id="A1W-Tl-Zcm"/>
-                            <constraint firstAttribute="trailing" secondItem="qy6-GQ-0BF" secondAttribute="trailing" id="BPL-FP-YhL"/>
-                            <constraint firstItem="egA-Zw-C6g" firstAttribute="centerX" secondItem="V9v-O2-tzQ" secondAttribute="centerX" id="Ij0-sx-c8T"/>
-                            <constraint firstAttribute="bottom" secondItem="DSX-s3-45U" secondAttribute="bottom" constant="100" id="RuN-13-fYw"/>
-                            <constraint firstItem="fmU-ZX-k7p" firstAttribute="centerX" secondItem="c96-P9-IYH" secondAttribute="centerX" id="SAn-52-OaA"/>
-                            <constraint firstItem="DSX-s3-45U" firstAttribute="centerX" secondItem="egA-Zw-C6g" secondAttribute="centerX" id="ViP-vc-wHe"/>
-                            <constraint firstItem="NwU-5i-o7A" firstAttribute="leading" secondItem="qy6-GQ-0BF" secondAttribute="leading" id="YiQ-F9-WSe"/>
-                            <constraint firstItem="c96-P9-IYH" firstAttribute="top" secondItem="Jhg-HM-2k6" secondAttribute="top" constant="104" id="arW-U8-tsK"/>
-                            <constraint firstItem="V9v-O2-tzQ" firstAttribute="leading" secondItem="fmU-ZX-k7p" secondAttribute="leading" id="bcD-um-7pX"/>
-                            <constraint firstItem="NwU-5i-o7A" firstAttribute="trailing" secondItem="qy6-GQ-0BF" secondAttribute="trailing" id="mP1-Vo-dcs"/>
-                            <constraint firstItem="DSX-s3-45U" firstAttribute="bottom" secondItem="V9v-O2-tzQ" secondAttribute="bottom" id="qA1-MR-yfs"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="ID" image="user.png" id="iji-zL-Cyg"/>
                     <connections>
@@ -667,25 +545,19 @@
             <objects>
                 <viewController id="AjG-9E-3pr" customClass="CCHSMorePowerSchoolLinkView" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="czz-Gb-8PD"/>
-                        <viewControllerLayoutGuide type="bottom" id="hpn-IN-qSp"/>
+                        <viewControllerLayoutGuide type="top" id="k8W-0P-93i"/>
+                        <viewControllerLayoutGuide type="bottom" id="LUS-Vk-V4k"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oPF-dP-FSn">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPx-O4-dwc">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aPx-O4-dwc">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="aPx-O4-dwc" firstAttribute="bottom" secondItem="oPF-dP-FSn" secondAttribute="bottom" id="Fv3-sc-Qke"/>
-                            <constraint firstItem="aPx-O4-dwc" firstAttribute="trailing" secondItem="oPF-dP-FSn" secondAttribute="trailing" id="s8c-6b-SHN"/>
-                            <constraint firstItem="aPx-O4-dwc" firstAttribute="leading" secondItem="oPF-dP-FSn" secondAttribute="leading" id="vL1-pC-C40"/>
-                            <constraint firstItem="aPx-O4-dwc" firstAttribute="top" secondItem="oPF-dP-FSn" secondAttribute="top" id="yp1-ft-jjv"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="PowerSchool" id="6dI-sq-QqW"/>
                     <connections>
@@ -701,25 +573,19 @@
             <objects>
                 <viewController id="7Kb-5t-DV0" customClass="CCHSMoreNavianceLink" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="vw9-we-ktt"/>
-                        <viewControllerLayoutGuide type="bottom" id="rQT-kx-NGr"/>
+                        <viewControllerLayoutGuide type="top" id="VM5-09-kEE"/>
+                        <viewControllerLayoutGuide type="bottom" id="MFF-ri-Omt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YZg-32-rFW">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q0f-9R-3gP">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q0f-9R-3gP">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="q0f-9R-3gP" firstAttribute="trailing" secondItem="YZg-32-rFW" secondAttribute="trailing" id="HNF-2T-ooW"/>
-                            <constraint firstItem="q0f-9R-3gP" firstAttribute="leading" secondItem="YZg-32-rFW" secondAttribute="leading" id="M06-Pg-EGq"/>
-                            <constraint firstItem="q0f-9R-3gP" firstAttribute="bottom" secondItem="YZg-32-rFW" secondAttribute="bottom" id="NFE-V7-cFb"/>
-                            <constraint firstItem="q0f-9R-3gP" firstAttribute="top" secondItem="YZg-32-rFW" secondAttribute="top" id="mJ6-72-Q07"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Naviance" id="fHr-ej-gly"/>
                     <connections>
@@ -735,25 +601,19 @@
             <objects>
                 <viewController id="heK-Wi-CqR" customClass="CCHSMoreMoodleLink" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Oim-7k-d2e"/>
-                        <viewControllerLayoutGuide type="bottom" id="4jy-uM-N4g"/>
+                        <viewControllerLayoutGuide type="top" id="294-El-GhY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ezg-HR-gUj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QRc-2z-GFr">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHG-kQ-cRb">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zHG-kQ-cRb">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="zHG-kQ-cRb" firstAttribute="bottom" secondItem="QRc-2z-GFr" secondAttribute="bottom" id="EGG-iA-XNb"/>
-                            <constraint firstItem="zHG-kQ-cRb" firstAttribute="trailing" secondItem="QRc-2z-GFr" secondAttribute="trailing" id="Gwu-wW-F5g"/>
-                            <constraint firstItem="zHG-kQ-cRb" firstAttribute="leading" secondItem="QRc-2z-GFr" secondAttribute="leading" id="Mgg-I3-weV"/>
-                            <constraint firstItem="zHG-kQ-cRb" firstAttribute="top" secondItem="QRc-2z-GFr" secondAttribute="top" id="zn9-R4-xsL"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Moodle" id="azh-hH-wST"/>
                     <connections>
@@ -769,15 +629,15 @@
             <objects>
                 <viewController id="VAH-nA-9zf" customClass="CCHSAbtSchoolView" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="atO-Ps-gOk"/>
-                        <viewControllerLayoutGuide type="bottom" id="rUN-BL-T5M"/>
+                        <viewControllerLayoutGuide type="top" id="ctF-f2-k3o"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q4W-Tz-nCs"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3sU-mj-Ala">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNy-uQ-vVB">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNy-uQ-vVB">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Since 1927 Central Catholic High School has been building a proud tradition of excellence as a high school for young men. The school is conducted by the Christian Brothers, diocesan clergy and dedicated laymen and laywomen under the auspices of the Diocese of Pittsburgh. 
 
@@ -791,8 +651,8 @@ Located in the Oakland area, the school is in the center of the educational and 
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d57-Uv-XO9">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d57-Uv-XO9">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Shortly after the Most Reverend Hugh C. Boyle was elevated to the episcopacy, he began a secondary school expansion program in Pittsburgh.
 
@@ -812,8 +672,8 @@ In 2008, Central Catholic was incorporated with its own two-tiered Board of Dire
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKU-A6-6J7">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YKU-A6-6J7">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Central Catholic High School Foundation Documents: 
 
@@ -879,8 +739,8 @@ Able to recognize and understand his responsibilities as part of a global commun
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBE-8d-VwG">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBE-8d-VwG">
+                                <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Since Central Catholic High School opened in 1927, the administration and faculty have been composed of Brothers of the Christian Schools, popularly called “The Christian Brothers” in the United States. This religious congregation of the Roman Catholic Church is a society of celibate laymen who profess the vows of poverty, chastity and obedience and are dedicated solely to the ministry of Christian education.
 
@@ -894,29 +754,11 @@ The Christian Brothers at Central Catholic, members of the congregation’s East
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="hNy-uQ-vVB" firstAttribute="top" secondItem="3sU-mj-Ala" secondAttribute="top" id="0sL-SF-lFL"/>
-                            <constraint firstItem="PBE-8d-VwG" firstAttribute="leading" secondItem="3sU-mj-Ala" secondAttribute="leading" id="2Fk-8G-BlI"/>
-                            <constraint firstItem="YKU-A6-6J7" firstAttribute="leading" secondItem="3sU-mj-Ala" secondAttribute="leading" id="CY0-zU-IOw"/>
-                            <constraint firstItem="hNy-uQ-vVB" firstAttribute="trailing" secondItem="3sU-mj-Ala" secondAttribute="trailing" id="EFh-ro-zwp"/>
-                            <constraint firstItem="d57-Uv-XO9" firstAttribute="trailing" secondItem="3sU-mj-Ala" secondAttribute="trailing" id="HPg-xZ-aJd"/>
-                            <constraint firstItem="YKU-A6-6J7" firstAttribute="bottom" secondItem="3sU-mj-Ala" secondAttribute="bottom" id="LGJ-AK-u3G"/>
-                            <constraint firstItem="hNy-uQ-vVB" firstAttribute="bottom" secondItem="3sU-mj-Ala" secondAttribute="bottom" id="awg-nF-epg"/>
-                            <constraint firstItem="d57-Uv-XO9" firstAttribute="leading" secondItem="3sU-mj-Ala" secondAttribute="leading" id="g1I-Jm-igm"/>
-                            <constraint firstItem="hNy-uQ-vVB" firstAttribute="leading" secondItem="3sU-mj-Ala" secondAttribute="leading" id="i1N-Sg-mP8"/>
-                            <constraint firstItem="YKU-A6-6J7" firstAttribute="top" secondItem="3sU-mj-Ala" secondAttribute="top" id="kLk-xM-GCK"/>
-                            <constraint firstItem="d57-Uv-XO9" firstAttribute="bottom" secondItem="3sU-mj-Ala" secondAttribute="bottom" id="mNf-zo-gdk"/>
-                            <constraint firstItem="PBE-8d-VwG" firstAttribute="trailing" secondItem="3sU-mj-Ala" secondAttribute="trailing" id="o3T-Aa-7Zr"/>
-                            <constraint firstItem="d57-Uv-XO9" firstAttribute="top" secondItem="3sU-mj-Ala" secondAttribute="top" id="xHP-7U-4Ry"/>
-                            <constraint firstItem="PBE-8d-VwG" firstAttribute="bottom" secondItem="3sU-mj-Ala" secondAttribute="bottom" id="xPw-Bf-yQ1"/>
-                            <constraint firstItem="PBE-8d-VwG" firstAttribute="top" secondItem="3sU-mj-Ala" secondAttribute="top" id="yDc-ig-Kcx"/>
-                            <constraint firstItem="YKU-A6-6J7" firstAttribute="trailing" secondItem="3sU-mj-Ala" secondAttribute="trailing" id="zw5-xV-jf3"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tGC-LW-e61">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="NaQ-tQ-UQj">
-                            <rect key="frame" x="96" y="7" width="575" height="31"/>
+                            <rect key="frame" x="97" y="7" width="575" height="31"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="Overview"/>
@@ -940,32 +782,26 @@ The Christian Brothers at Central Catholic, members of the congregation’s East
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c2g-Mi-azD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3245" y="6447"/>
+            <point key="canvasLocation" x="3252" y="6495"/>
         </scene>
         <!--Handbook View - Student Handbook-->
         <scene sceneID="wCb-Aa-Yxc">
             <objects>
                 <viewController id="1e2-ql-9KY" customClass="CCHSHandbookView" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Khj-Tt-Vg6"/>
-                        <viewControllerLayoutGuide type="bottom" id="qSL-ex-nNF"/>
+                        <viewControllerLayoutGuide type="top" id="xYd-r1-x3D"/>
+                        <viewControllerLayoutGuide type="bottom" id="MJ5-Pl-8Dz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ExT-vC-Gjg">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0VZ-eA-4UY">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0VZ-eA-4UY">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="0VZ-eA-4UY" firstAttribute="leading" secondItem="ExT-vC-Gjg" secondAttribute="leading" id="DhK-vf-sTg"/>
-                            <constraint firstItem="0VZ-eA-4UY" firstAttribute="trailing" secondItem="ExT-vC-Gjg" secondAttribute="trailing" id="LVZ-Hs-Uj7"/>
-                            <constraint firstItem="0VZ-eA-4UY" firstAttribute="bottom" secondItem="ExT-vC-Gjg" secondAttribute="bottom" id="TJA-Kz-LOK"/>
-                            <constraint firstItem="0VZ-eA-4UY" firstAttribute="top" secondItem="ExT-vC-Gjg" secondAttribute="top" id="sPt-nY-1bx"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Student Handbook" id="SrS-Z2-JeI"/>
                     <connections>
@@ -981,55 +817,35 @@ The Christian Brothers at Central Catholic, members of the congregation’s East
             <objects>
                 <viewController id="fCY-Rl-kZh" customClass="CCHSAbtAppView" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="N8W-4v-OsD"/>
-                        <viewControllerLayoutGuide type="bottom" id="DmB-Ah-CNS"/>
+                        <viewControllerLayoutGuide type="top" id="Fi7-0Z-XcF"/>
+                        <viewControllerLayoutGuide type="bottom" id="XVS-QV-sBo"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nq4-TI-HEH">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q1f-FH-IFk">
-                                <rect key="frame" x="176" y="342" width="415" height="289"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="q1f-FH-IFk">
+                                <rect key="frame" x="177" y="342" width="415" height="387"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="289" id="JlU-0b-yk6"/>
-                                    <constraint firstAttribute="width" constant="415" id="ybP-Rj-L0o"/>
-                                </constraints>
                                 <string key="text">RollVikes
-Version 1.0.0
+Version 1.0.1
 
 This is an app designed and created for the benefit of the students. The RollVikes app was designed and built by senior Nick Petro ('14) as part of an independent study project. The work was done in collaboration with Mr. Allen, the head of technology integration here at Central Catholic. Some of the services within the app are secure and encrypted, and therefore may not be accessed outside of the limits of the school. For any questions or comments, please contact either Nick Petro, Mr. Allen (Campus Ministry), or Mr. Young (Tech Office). Feel free to email us with any comments, suggestions, or questions for or about the app using the button below. Enjoy!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2h-f5-5Gw">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2h-f5-5Gw">
                                 <rect key="frame" x="264" y="746" width="220" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="220" id="aZf-gx-0oW"/>
-                                    <constraint firstAttribute="height" constant="40" id="kzf-JO-fYF"/>
-                                </constraints>
                                 <state key="normal" title="Email Us!"/>
                                 <connections>
                                     <action selector="emailUsButton:" destination="fCY-Rl-kZh" eventType="touchUpInside" id="Gg5-cj-SM7"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="CCHS_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xci-5P-xED">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" image="centralcatholiccrest2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xci-5P-xED">
                                 <rect key="frame" x="264" y="94" width="240" height="240"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="Rtz-hR-0xZ"/>
-                                    <constraint firstAttribute="height" constant="240" id="l6f-jw-aQu"/>
-                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="q1f-FH-IFk" firstAttribute="centerX" secondItem="Xci-5P-xED" secondAttribute="centerX" id="5Xw-mG-MAn"/>
-                            <constraint firstItem="q1f-FH-IFk" firstAttribute="top" secondItem="Xci-5P-xED" secondAttribute="bottom" constant="8" symbolic="YES" id="Clp-9n-LM8"/>
-                            <constraint firstItem="Xci-5P-xED" firstAttribute="centerX" secondItem="nq4-TI-HEH" secondAttribute="centerX" id="JDm-7f-9ln"/>
-                            <constraint firstItem="E2h-f5-5Gw" firstAttribute="leading" secondItem="Xci-5P-xED" secondAttribute="leading" id="qeV-tT-Nni"/>
-                            <constraint firstAttribute="bottom" secondItem="E2h-f5-5Gw" secondAttribute="bottom" constant="238" id="sMw-id-fya"/>
-                            <constraint firstItem="Xci-5P-xED" firstAttribute="top" secondItem="nq4-TI-HEH" secondAttribute="top" constant="94" id="xjQ-6E-sFU"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="About the App" id="FVZ-CN-k6A"/>
                 </viewController>
@@ -1042,25 +858,19 @@ This is an app designed and created for the benefit of the students. The RollVik
             <objects>
                 <viewController id="Nuw-FY-eF5" customClass="CCHSMoreCentralLinkView" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="8iF-XA-dva"/>
-                        <viewControllerLayoutGuide type="bottom" id="gvd-DG-8Z2"/>
+                        <viewControllerLayoutGuide type="top" id="Bf7-bQ-UEy"/>
+                        <viewControllerLayoutGuide type="bottom" id="wZy-ub-YUP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="W4s-NH-Of4">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3w8-c0-bLw">
+                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3w8-c0-bLw">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="3w8-c0-bLw" firstAttribute="bottom" secondItem="W4s-NH-Of4" secondAttribute="bottom" id="EwH-vv-ct8"/>
-                            <constraint firstItem="3w8-c0-bLw" firstAttribute="leading" secondItem="W4s-NH-Of4" secondAttribute="leading" id="NjP-66-TZ9"/>
-                            <constraint firstItem="3w8-c0-bLw" firstAttribute="trailing" secondItem="W4s-NH-Of4" secondAttribute="trailing" id="ebK-4H-v3b"/>
-                            <constraint firstItem="3w8-c0-bLw" firstAttribute="top" secondItem="W4s-NH-Of4" secondAttribute="top" id="rFM-RX-9Pk"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Central Homepage" id="WIE-VT-XXt"/>
                     <connections>
@@ -1095,9 +905,7 @@ This is an app designed and created for the benefit of the students. The RollVik
     <resources>
         <image name="Auditorium.jpg" width="900" height="608"/>
         <image name="BlueandGoldBackground3.png" width="1200" height="1920"/>
-        <image name="CCHS_logo.png" width="160" height="174"/>
         <image name="NewsBuilding.jpg" width="708" height="290"/>
-        <image name="SimpleLogoV2.png" width="2550" height="3300"/>
         <image name="calendar.png" width="30" height="30"/>
         <image name="centralcatholiccrest2.png" width="225" height="224"/>
         <image name="home.png" width="30" height="30"/>

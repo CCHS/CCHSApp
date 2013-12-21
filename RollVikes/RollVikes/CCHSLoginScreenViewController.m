@@ -15,6 +15,7 @@
 @end
 
 @implementation CCHSLoginScreenViewController
+@synthesize message2;
 @synthesize errorMessage;
 @synthesize loginAuthentication;
 @synthesize originalCenter;
@@ -24,6 +25,8 @@
 {
     [super viewDidLoad];
     [errorMessage setHidden:YES];
+    [message2 setHidden:YES];
+    num=1;
     registeredCredentials = [[NSMutableDictionary alloc] initWithObjects:[NSArray arrayWithObjects:nil] forKeys:[NSArray arrayWithObjects:nil]];
     self.originalCenter = self.view.center;
 }
@@ -115,13 +118,16 @@
     NSString *stringWithText = @"Failed.";
     stringWithText = html;
     NSMutableString *stringWithIDNumber = [NSMutableString stringWithFormat:@""];
-    NSLog(@"%@",stringWithText);
+    //NSLog(@"%@",stringWithText);
+    int len = [stringWithText length];
     NSString *loginNo = @"Failed.";
     NSString *serverError = @"Unable to search LDAP server";
+    //If user logged in perviously and has stored data in the dictionary
     if ([[registeredCredentials objectForKey:username.text]isEqualToString:password.text]) {
         [stringWithText stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        //If connected to the internet too
         if (status&&(![stringWithText isEqualToString:loginNo])&&(![stringWithText length]==0)){
-            for (int x=0,y=1;x<8;x++){
+            for (int x=0,y=1;x<len;x++){
                 if ([[stringWithText substringWithRange:NSMakeRange(x, y)] isEqualToString:@"0"]){
                     [encryptedID appendString:@"X"];
                 }
@@ -153,7 +159,7 @@
                     [encryptedID appendString:@"G"];
                 }
             }
-            for (int x=0,y=1;x<8;x++){
+            for (int x=0,y=1;x<len;x++){
                 if ([[encryptedID substringWithRange:NSMakeRange(x, y)] isEqualToString:@"X"]){
                     [stringWithIDNumber appendString:@"0"];
                 }
@@ -200,19 +206,20 @@
                 [standardUserEnID setObject:[NSString stringWithString:encryptedID] forKey:@"EnID"];
                 [standardUserEnID synchronize];
             }
-            NSLog(@"hello credentials then status");
+            //NSLog(@"hello credentials then status");
             [self performSegueWithIdentifier:@"loginSegue" sender:sender];
         }
+        //if not connected to the internet
         else {
-            NSLog(@"hello credentials only");
+            //NSLog(@"hello credentials only");
             [self performSegueWithIdentifier:@"loginSegue" sender:sender];
         }
     }
-    
+    //If connected to the internet (Most common login condition)
     if (status&&(![stringWithText isEqualToString:loginNo])&&(![stringWithText isEqualToString:serverError])&&(![stringWithText length]==0)) {
         [registeredCredentials setObject:password.text forKey:username.text];
         [stringWithText stringByTrimmingCharactersInSet: [NSCharacterSet whitespaceAndNewlineCharacterSet]];
-        for (int x=0,y=1;x<8;x++){
+        for (int x=0,y=1;x<len;x++){
             if ([[stringWithText substringWithRange:NSMakeRange(x, y)] isEqualToString:@"0"]){
                 [encryptedID appendString:@"X"];
             }
@@ -244,7 +251,7 @@
                 [encryptedID appendString:@"G"];
             }
         }
-        for (int x=0,y=1;x<8;x++){
+        for (int x=0,y=1;x<len;x++){
             if ([[encryptedID substringWithRange:NSMakeRange(x, y)] isEqualToString:@"X"]){
                 [stringWithIDNumber appendString:@"0"];
             }
@@ -291,13 +298,23 @@
             [standardUserEnID setObject:[NSString stringWithString:encryptedID] forKey:@"EnID"];
             [standardUserEnID synchronize];
         }
-        NSLog(@"hello status only");
+        //NSLog(@"hello status only");
         [self performSegueWithIdentifier:@"loginSegue" sender:sender];
     }
-
+    //If unsuccessful login
     else {
-        NSLog(@"sorry");
-        [errorMessage setHidden:NO];
+        //NSLog(@"sorry");
+        //Temporary fix for double login bug
+        if (num<3){
+            [message2 setHidden:NO];
+            num++;
+        }
+        //Actual invalid login and sets appropriate error message visible
+        else{
+            num=3;
+            [message2 setHidden:YES];
+            [errorMessage setHidden:NO];
+        }
     }
 
 }

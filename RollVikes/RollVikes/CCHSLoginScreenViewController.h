@@ -12,6 +12,7 @@
 
 
 @interface CCHSLoginScreenViewController : UIViewController<UIWebViewDelegate>{
+    int num;
     NSMutableDictionary *registeredCredentials;
     IBOutlet UITextField *username;
     IBOutlet UITextField *password;
@@ -20,6 +21,7 @@
 @property struct CGPoint originalCenter;
 @property (weak, nonatomic) IBOutlet UITextView *errorMessage;
 @property (weak, nonatomic) IBOutlet UIWebView *loginAuthentication;
+@property (weak, nonatomic) IBOutlet UITextView *message2;
 - (IBAction)loginButton:(id)sender;
 - (IBAction)backgroundTouched:(id)sender;
 - (IBAction)enter:(id)sender;

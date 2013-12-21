@@ -96,6 +96,7 @@
         
         NSURL *url = [NSURL URLWithString:wholeURL];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
+        
         Reachability *reachability = [Reachability reachabilityWithHostName:wholeURL];
         NetworkStatus status = [reachability currentReachabilityStatus];
         if (!status) {
