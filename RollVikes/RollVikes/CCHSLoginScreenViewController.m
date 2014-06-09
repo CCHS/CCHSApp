@@ -114,7 +114,7 @@
     NetworkStatus status = [reachability currentReachabilityStatus];
     //NSLog(@"%u",status);
         
-    NSString *html = [loginAuthentication stringByEvaluatingJavaScriptFromString:@"document.body.textContent"];
+    NSString *html = [self.loginAuthentication stringByEvaluatingJavaScriptFromString:@"document.body.textContent"];
     NSString *stringWithText = @"Failed.";
     stringWithText = html;
     NSMutableString *stringWithIDNumber = [NSMutableString stringWithFormat:@""];
